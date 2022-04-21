@@ -1,0 +1,252 @@
+\documentclass[11pt]{beamer} %handout
+\usepackage[utf8]{inputenc} 
+\usetheme{Boadilla}
+\usepackage{amsmath}
+\usepackage{physics}
+\usepackage{tikz-cd}
+\usepackage{tikz-cd}
+\usepackage{adjustbox}
+\usepackage{amsmath,amsthm,amssymb,mathtools,amsfonts}
+\usepackage[italian]{babel}
+\usepackage{pgfornament}
+
+\author{Chiara Molinari}
+\title{Costruzioni paradossali in Teoria della Misura: il Teorema di Davies}
+\date{29 aprile 2022}
+
+\newcommand{\ra}{\rightarrow}
+\newcommand{\Ra}{\Rightarrow}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\Z}{\mathbb{Z}}
+\renewcommand{\S}{\mathbb{S}}
+\renewcommand{\P}{\mathbb{P}}
+\newcommand{\parti}{\mathcal{P}}
+\newcommand{\E}{\mathcal{E}}
+\newcommand{\A}{\mathcal{A}}
+\newcommand{\fa}{\forall}
+\newcommand{\fo}{\forall}
+\newcommand{\e}{\varepsilon}
+\newcommand{\<}{\langle}
+\renewcommand{\>}{\rangle}
+
+% Bold math in titles
+\makeatletter%
+\DeclareRobustCommand*{\bfseries}{%
+	\not@math@alphabet\bfseries\mathbf
+	\fontseries\bfdefault\selectfont
+	\boldmath
+}
+\makeatother
+
+\theoremstyle{theorem}
+\newtheorem{teo}{Teorema}
+
+\theoremstyle{theorem}
+\newtheorem{teorema}{Teorema}
+
+\theoremstyle{theorem}
+\newtheorem{proposizione}{Proposizione}
+
+\theoremstyle{theorem}
+\newtheorem{corollario}{Corollario}
+
+\newtheorem{defin}[teo]{Definizione}
+
+\theoremstyle{theorem}
+\newtheorem{lem}{Lemma}
+
+\usefonttheme{professionalfonts} %questo coso diabilita la gestione di font di beamer
+
+
+
+
+\begin{document}%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+	\maketitle
+\end{frame}
+
+
+\begin{frame}[fragile]
+	\structure{\textbf{Teorema (Davies, 1951):}} dato un insieme misurabile $A \subseteq \R^2$, con $\mu(E)< \infty$ (misura di Lebesgue), esiste un insieme di linee $L$ tale che:\\
+	(i) per ogni punto di $E$ passi una linea di $L$;\\
+	(ii) $\mu(L^*)=\mu(E)$;\\
+	dove con $L^*$ si indica il sottoinsieme di $\R^2$ coperto dalle rette di $L$.
+	
+	\medskip
+	
+	Nel 2001, M. Csornyei dimostra un rafforzamento del teorema e una sua generalizzazione al caso di $\mu$ generica misura boreliana $\sigma$-finita. 
+	
+	\medskip
+	 
+	In questo colloquio:\\
+	\begin{itemize}
+		\item accenniamo alla dimostrazione originale;\\
+		\item mostriamo alcune idee utilizzate da Csornyei per dimostrare il teorema rafforzato (la costruizione geometrica "venetian blind" e la formulazione duale del problema);\\
+		\item tratteremo il problema della misurabilità di $L^*$ come sopra;\\
+		\item dimostreremo il caso per $\mu$ generica boreliana $\sigma$-finita.
+	\end{itemize}
+
+\end{frame}
+	
+\begin{frame}
+	
+	
+	La dimostrazione originale utilizzava il seguente lemma.\\
+	
+	Sia $R$ un parallelogramma $R$ e $K$ un sottoinsieme chiuso (misurabile). Allora dato $\varepsilon>0$, esiste una collezioni finita (numerabile) di parallelogrammi $\{P_i\}_{i \in I}$ contenuti in $R$, con lati paralleli a quelli di $R$ tali che:\\
+	\begin{enumerate}[i]
+		\item $K \subseteq \bigcup_i P_i$;	
+		\item $|\bigcup_i P_i \setminus K|< \varepsilon$.
+	\end{enumerate}
+	
+
+\end{frame}
+
+
+
+\begin{frame}[fragile]
+	Per enunciare il rafforzamento di Csornyei, diamo prima la seguente definizione.\\
+	
+	\begin{defin}
+	Un insieme è della prima categoria se unione numerabile di insiemi mai densi (cioè con chiusura a parte interna vuota).\\
+	Un insieme è residuo se il suo complementare è della prima categoria. 
+	\end{defin}
+
+\end{frame}
+
+\begin{frame}[fragile]
+
+\begin{lemma}
+	Sia $A$ aperto del piano e sia $x$ un punto che non appartiene ad $A$. Allora esiste un insieme boreliano di rette $L$ tale che:\\
+	\begin{itemize}
+		\item L contiene un insieme residuo di rette per ogni punto di $A$;\\
+		\item $L^{*} \backslash A$ interseca ogni retta per $x$ in un insieme di misura di Lebesgue nulla.\\
+	\end{itemize}
+\end{lemma}
+
+
+	Vediamo che è un rafforzamento.\\
+	\begin{itemize}
+		\item Si mostra che condizione $A$ non è restrittiva.\\
+		\item Ricordiamo un insieme è di misura nulla se e solo se interseca $quasi$ ogni retta in un insieme di misura lineare nulla. Togliendo il $quasi$, la tesi è più forte.\\
+		\item Aggiungiamo una condizione topologica su $L$.
+	\end{itemize}
+
+\end{frame}
+
+\begin{frame}[fragile]
+
+Formulazione duale del problema.
+Esiste una corrispondenza naturale tra le rette in $\P^2 \R$ e i punti in $\P^2\R$: alla retta di equazione $ax_0+bx_1+cx_2=0$ associo $[a,b,c]$.\\
+Se una retta è affine, considero la sua equazione omogeneizzata.\\
+Si consideri il piano proiettivo reale $\P^2 \R$, realizzato come quoziente di $\S^2$. La naturale misura di area su $\S^2$ induce tramite $\pi$ una misura su $\P^2\R$.\\
+Così possiamo definire una misura sulle rette.
+\end{frame}
+
+\begin{frame}
+	Enunciamo così il la versione duale del precedente lemma.
+	
+	\begin{lemma}
+	Sia $L$ un insieme aperto di rette (cioè corrispondente nel duale a un aperto di $\P^2 \R$)e sia $X$ un retta non appartenente a $L$. Allora esiste un insieme boreliano di punti $A$ per cui:\\
+	\begin{itemize}
+		\item ogni retta di $L$ interseca $A$ in un insieme residuo;\\
+		\item per ogni punto di $X$ passano trascurabili rette di $A^{*} \backslash L$.\\
+	\end{itemize}
+	Con $A^*$ indichiamo l'insieme delle rette passanti per i punti di $A$.
+	\end{lemma}
+	
+\end{frame}	
+
+
+
+\begin{frame}[fragile]
+	Risolta difficile dare un'idea intuitiva della dimostrazione di questo lemma senza passare per teoremi tecnici.\\
+	
+	A titolo di esempio, vediamo la costruzione geometrica detta "venetian blind", che dato un parallelogramma $P$, gli associa una collezione di parallelogrammi...
+	
+\end{frame}
+
+
+\begin{frame}[fragile]
+
+Per $\mu$ generica misura boreliana, dato $A$ misurabile, si trova $L$ boreliano che soddisfa le richieste della tesi. Perché $L^*$ è misurabile?
+
+\begin{defin}
+	Sia $X$ un insieme non vuoto e sia $\mathcal{E}$ una collezione di suoi sottoinsiemi. Diciamo che un insieme $A$ è analitico o di Suslin se è nella forma
+	$$
+	A=\bigcup_{\left(n_{i}\right) \in \mathbb{N}^{\infty}} \bigcap_{k=1}^{\infty} A_{n_{1}, \ldots, n_{k}} .
+	$$
+	per opportuni $\left\{A_{n_{1}, \ldots, n_{k}}\right\} \in \E$.\\
+	Questa è detta A-operazione (o operazione di Suslin).\\
+	La collezione degli insiemi di questo tipo e l'insieme vuoto è indicata con $S(\mathcal{E})$.
+\end{defin}	
+
+\end{frame}
+
+\begin{frame}[fragile]
+Valgono i seguenti teoremi generali.
+
+\begin{teo}
+	\begin{enumerate}[i]
+		\item $S(S(\mathcal{E}))=S(\mathcal{E})$\\
+		\item Sotto opportune ipotesi, la $\sigma$-algebra $\sigma(\mathcal{E})$ generata da $\mathcal{E}$ è contenuta in $S(\mathcal{E}).$
+	\end{enumerate}
+\end{teo}
+
+Applicando il teorema con $\E$ la classe dei compatti di $\P^2 \R$, si ha
+$$L=\bigcup_{{\bf n}\in{\bf N}^\infty}\bigcap_{k=1}^\infty K_{n_1,\ldots,n_k}$$
+con $K_{n_1,\ldots,n_k}\in {\cal E}$.\\
+Si mostra che vale anche
+$$L^*=\bigcup_{{\bf n}\in{\bf N}^\infty}\bigcap_{k=1}^\infty K_{n_1,\ldots,n_k}^*.$$ 
+
+\end{frame}
+
+\begin{frame}
+Abbiamo quindi che $L^*$ analitico. Concludiamo applicando il seguente teorema. \\
+
+\begin{teo}
+ 	Detta $\mu$ una misura $\sigma$-finita. Per opportune ipotesi su $\E$, ogni $\mathcal{E}$-insieme di Souslin è $\mu$-misurabile.
+\end{teo}	
+	
+	
+\end{frame}
+
+
+\begin{frame}[fragile]
+
+Si mostra che possiamo assumere che $\mu$ abbia supporto compatto $K$ disgiunto da $A$.\\
+Quindi possiamo assumere che $A=B(x, r) \backslash\{x\}$ e $B(x, 2 r)$ sia disgiunta da $K$.\\
+Per brevità, assumiamo che $A=B(0,1) \backslash\{0\}$ e $B(0,2) \cap K=\varnothing$.\\
+Applichiamo il lemma ad $A$ e $x=0$, e sia $M$ l'insieme di rette così ottenuto.\\
+Sia $M^{* *}=M^{*} \backslash B(0,1)$. Consideriamo lo spazio
+$$
+\left(\mathbb{R}^{2}, \mu\right) \times(\mathbb{R}, \lambda),
+$$
+dove $\lambda$ è la misura di Lebesgue sulla retta e consideriamo il sottoinsieme
+$$
+\left\{(x, t) \in \mathbb{R}^{2} \times \mathbb{R}: t x \in M^{* *}\right\} .
+$$
+Poiché $M$ soddisfa la seconda condizione del lemma 2, $M^{**}$ interseca ogni retta per l'origine in un insieme di misura di Lebesgue nulla, cioè per ogni $x \neq 0$ vale $\lambda(\{t: tx \in M^{**}\})=0$ (tutte le sezioni verticali di questo sottoinsieme hanno misura di Lebesgue nulla). Quindi quasi ogni sezione orizzontale ha misura nulla e possiamo scegliere un numero $u$ tale che $1 / 2<u<1$ e $\mu\left(\left\{x: u x \in M^{* *}\right\}\right)=0$, e porre $t=1 / u$. Quindi $1<t<2$ e $\mu\left(t M^{* *}\right)=0$. Affermiamo che $t M$ soddisfa la tesi.\\
+\end{frame}
+
+
+\begin{frame}
+Siccome $M$ contiene residue rette per ogni punto di $B(0,1) \backslash\{0\}$, $t M$ contiene residue rette per i punti di $t B(0,1) \backslash\{0\}$, ma $t B(0,1) \backslash\{0\} \supset B(0,1) \backslash\{0\}=A$ quindi è vera la prima affermazione.\\
+D'altra parte, siccome $B(0,2) \cap K=\varnothing$ e $t<2$, si ha
+$$
+\mu\left(t M^{*}\right)=\mu\left(t M^{*} \cap K\right)=\mu\left(t M^{*} \backslash B(0, t)\right)
+$$
+Inoltre
+$$
+t M^{*} \backslash B(0, t)=t\left(M^{*} \backslash B(0,1)\right)=t M^{* *}
+$$
+Siccome $\mu\left(t M^{* *}\right)=0$, anche $\mu (tM^*)= 0= \mu(A)$.
+
+\end{frame}
+
+
+\end{document}%%%%%%%%%%%%%%%%%%%%%%%%
