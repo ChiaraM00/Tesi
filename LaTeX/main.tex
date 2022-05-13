@@ -80,56 +80,65 @@
 \clearpage
 
 \section{Introduzione}
-	 Nel $1952$ R. O. Davies dimostrò che, dato un insieme misurabile $A \subset \mathbb{R}^{2}$, esiste un insieme di rette $L$ tali che per ogni punto di $A$ passi una retta di $L$ (diremo che $L$ copre $A$) e l'insieme di punti coperto dalle rette di $L$ abbia la stessa misura di Lebesgue di $A$.\\
-	 Il nostro obiettivo è dimostrare una generalizzazione di questo risultato per una generica misura boreliana $\sigma$-finita.
+	 Nel $1952$ R. O. Davies dimostrò che, dato un insieme misurabile $A \subset \mathbb{R}^{2}$, esiste un insieme di rette $L$ tali che per ogni punto di $A$ passa una retta di $L$ (diremo che $L$ copre $A$) e l'insieme di punti coperto dalle rette di $L$ ha la stessa misura di Lebesgue di $A$.\\
+	 
+	 \begin{defin}
+	 	Dato uno spazio di misura $(X, \mathcal{A})$, una misura $\mu$ si dice $\sigma$-finita se esistono degli insiemi $A_{1},A_{2},\ldots \in {\mathcal {A}}$ con $\mu \left(A_{n}\right)<\infty $ per ogni $n \in \N$, tali che $\bigcup _{n\in \mathbb {N} }A_{n}=X$.\\
+	 	Se $X$ spazio topologico, una misura $\mu$ su $X$ si dice boreliana se ogni boreliano è misurabile. 
+	 \end{defin}	
+ 
+	 Il nostro obiettivo è dimostrare una generalizzazione del teorema di Davies per una generica misura boreliana $\sigma$-finita.
 	 Ciò è possibile mostrando un rafforzamento del teorema di Davies (nel caso della misura di Lebesgue e $A$ aperto), che consente la generalizzazione cercata.\\
 	 Per fare questo, il primo passo è formulare il problema in forma duale, cioè facendo corrispondere a ogni retta un punto e viceversa.\\
-	 Successivamente, si mostra l'enunciato in forma duale, facendo uso di alcuni lemmi dimostrati in una sezione a parte.\\
+	 Successivamente, si mostra l'enunciato in forma duale, facendo uso di alcuni lemmi dimostrati nella sezione finale.\\
+	 La generalizzazione del teorema invece richiederà lo sviluppo della teoria riguardante gli insiemi di Suslin.
 	
 	\textcolor{red}{ovviamente sistemare}
 	\newpage
 
 
 \section{Misura su insiemi di rette}
-
-Si consideri il piano proiettivo reale $\P^2 \R$, realizzato come quoziente di $\S^2$ rispetto alla mappa $\pi$ che identifica i punti antipodali. Una misura boreliana su $\S^2$ induce tramite $\pi$ una misura di Borel su $\P^2\R$. Nel caso la misura su $\S^2$ sia misura usuale di area, chiameremo la misura immagine $\theta$.\\
 Consideriamo l'insieme delle rette in $\P^2 \R$, dove ogni retta è descritta dall'equazione omogenea $ax_0+bx_1+cx_2=0$, per opportuni coefficienti $a,b,c$.\\
-Possiamo identificare ogni retta con un punto di $\P^2 \R$, attraverso la bigezione $ax_0+bx_1+cx_2=0 \mapsto [a,b,c]$.\\
-Diciamo che un insieme di rette proiettive, diciamo che questo è aperto, compatto, boreliano se il sottoinsieme di $\P^2 \R$ corrispondente nel duale lo è.\\
-Inoltre, data una misura $\mu$ in $\P^2 \R$, si ha in modo naturale una misura boreliana sulle rette proiettive. Diciamo che un insieme di rette è misurabile rispetto a $\mu$ se l'insieme di punti duale lo è.\\
-Data una retta affine in $\R^2$, si può omogeneizzare l'equazione che la descrive, associando a $a+bx+cy=0$ l'equazione omogenea $ax_0+bx_1+cx_2=0$, e assumere che questa retta sia in $\P^2 \R$. Si è definisce una misura anche sulle rette affini.\\
-Inoltre si può parlare di insiemi di rette affini aperti, compatti, boreliani, misurabili.
+Possiamo identificare ogni retta con un punto di $\P^2 \R$, attraverso la bigezione $ax_0+bx_1+cx_2=0 \mapsto [a,b,c]$, che chiameremo corrispondenza duale.\\
+Dato un insieme di rette proiettive, diciamo che questo è aperto, compatto, boreliano se il sottoinsieme di $\P^2 \R$ corrispondente nel duale lo è.\\
+
+Si consideri il piano proiettivo reale $\P^2 \R$, realizzato come quoziente di $\S^2$ rispetto alla mappa $\pi$ che identifica i punti antipodali. Una misura su $\S^2$ induce tramite $\pi$ una misura su $\P^2\R$. Nel caso la misura su $\S^2$ sia misura usuale di area, chiameremo la misura immagine $\theta$.\\
+Così, data una misura $\mu$ in $\P^2 \R$, si ha in modo naturale una misura $\tilde \mu$ sulle rette proiettive. In particolare, diciamo che un insieme di rette è misurabile rispetto a $\tilde \mu$ se l'insieme di punti duale lo è rispetto a $\mu$.\\
+
+Data una retta affine in $\R^2$, si può omogeneizzare l'equazione che la descrive, associando a $a+bx+cy=0$ l'equazione omogenea $ax_0+bx_1+cx_2=0$, e assumere che questa retta sia in $\P^2 \R$. Si definisce così una misura anche sulle rette affini.\\
+Come prima si può parlare di insiemi di rette affini aperti, compatti, boreliani, misurabili.
 
 \begin{oss}
+	\label{osservazione}
 	Un insieme di rette passanti per un punto $P$, è rappresentato nel duale da punti appartenenti a una retta $\ell_P$.\\
 	Infatti se $P=[a,b,c]$, una retta passante per $P$ soddisfa $ax_0+bx_1+cx_2=0$. Tale retta è rappresentata da $[x_0,x_1,x_2]$, che quindi appartiene alla retta $az_0+bz_1+cz_2=0$.\\
 	In particolare, $\ell_P$ è rappresentata nel duale dal punto $P$.
 \end{oss}
 
-Fissato un punto $P$ nel piano proiettivo, la misura $\theta$ delle rette passanti per esso è sempre nulla.\\
-Usando l'osservazione, si può comunque definire una misura sulle rette passanti per $P$: è quella indotta dalla naturale misura sulla retta proiettiva $\ell_P$ (omeomorfa a $\S^1$ quozientato).
+Fissato un punto $P$ nel piano proiettivo, la misura $\tilde \theta$ delle rette passanti per esso è sempre nulla, perché un'insieme lineare in $\P^2 \R$ ha area nulla.\\
+Usando l'osservazione, si può comunque definire una misura sulle rette passanti per $P$: è quella indotta dalla naturale misura di lunghezza sulla retta proiettiva $\ell_P$ (omeomorfa a $\S^1$ quozientato).
 
 \begin{defin}
-Una direzione è un punto all'infinito della chiusura proiettiva di $\R^2$. La misura sulle direzioni è data dalla misura di lunghezza su $\S^1$ quozientato.\\
+Una direzione è un punto all'infinito della chiusura proiettiva di $\R^2$. La misura sulle direzioni è data dalla misura di lunghezza sulla retta all'infinito.\\
 Dato un insieme di rette $L$ in $\R^2$ e una direzione $d$, sia $L_{d}$ l'insieme delle rette di $L$ in direzione $d$.
 \end{defin}
 
-A meno passare alle chiusura proiettiva, $L_{d}$ è un sottoinsieme di rette passanti per un fissato punto all'infinito.\\
-Abbiamo quindi già a disposizione una misura sull'insieme $L_d$, come nell'osservazione precedente.\\
-Si osserva che $L_d$ ha misura nulla se e solo se per ogni $t_d$ retta ortogonale alla direzione $d$, $ (\bigcup L_d) \cap t_d$ ha misura lineare nulla.\\
+A meno passare alle chiusura proiettiva, $L_{d}$ è un sottoinsieme di rette passanti per un fissato punto all'infinito $Q$.\\
+Come prima, la misura $\tilde \theta$ di $L_d$ è nulla, ma esiste una misura su tale insieme, indotta dalla misura lineare su $\ell_Q$.\\
+Con queste definizioni, si osserva che $L_d$ ha misura $\tilde \theta$ nulla se e solo se per ogni $t_d$ retta ortogonale alla direzione $d$, $ (\bigcup L_d) \cap t_d$ ha misura lineare nulla.\\
 Inoltre vale il seguente lemma.
 
 \begin{lemma}
-	Un insieme misurabile di rette $L$ nel piano ha misura $\theta$ nulla se e solo se contiene trascurabili rette in quasi ogni direzione. 
+	Un insieme misurabile di rette $L$ nel piano ha misura $\tilde \theta$ nulla se e solo se contiene trascurabili rette in quasi ogni direzione. 
 \end{lemma}
 
 \begin{proof}
-	Inoltre ogni insieme misurabile $A \subseteq \R^2$ ha misura nulla se e solo se esiste $x \in \R^2$ (equivalentemente, per ogni $x$), quasi ogni retta per $x$ interseca $A$ in insieme di misura lineare nulla. Infatti segue subito applicando il teorema di Fubini e un cambio di variabili in coordinate polari nel piano.\\
+	Ogni insieme misurabile $A \subseteq \R^2$ ha misura nulla se e solo se esiste $x \in \R^2$ (equivalentemente, per ogni $x$), quasi ogni retta per $x$ interseca $A$ in insieme di misura lineare nulla. Infatti segue subito applicando il teorema di Fubini e un cambio di variabili in coordinate polari nel piano.\\
 	Posso supporre che $L$ sia un insieme di rette proiettive, rappresentato nel duale dai punti $A$.\\
 	Fissiamo $x$ punto nel duale, che corrisponde alla retta all'infinito.\\
 	Passando in carte, posso supporre che $x \in \R^2$ e $A\subseteq \R^2$, a meno di un insieme di misura nulla.\\
-	$\theta(A)=0 \LRa$ per quasi ogni retta $\ell$ per $x$, $\theta(\ell \cap A)=0$.\\
-	Passando al duale questo avviene se e solo se per quasi ogni punto all'infinito (direzioni), la misura delle rette di $L$ passanti per quel punto (in quella direzione) è nulla.
+	$\tilde \theta (L)=0 \LRa \theta(A)=0 \LRa$ per quasi ogni retta $\ell$ per $x$, $\theta(\ell \cap A)=0$.\\
+	Passando al duale, questo avviene se e solo se per quasi ogni punto all'infinito (direzione), la misura delle rette di $L$ passanti per quel punto (in quella direzione) è nulla.
 \end{proof}	
 
 
@@ -137,45 +146,59 @@ Inoltre vale il seguente lemma.
 	
 \newpage
 
-\section{Caso della misura di Lebesgue}
+\section{Il Teorema di Davies per la misura di Lebesgue}
 
-Dimostriamo prima il seguente lemma, che implica il teorema di Davies nel caso della misura di Lebesgue e $A$ aperto.\\
-Premettiamo alcune definizioni.
+Procediamo con la dimostrazione di lemma che implica il teorema di Davies nel caso della misura di Lebesgue e $A$ aperto.\\
+Premettiamo alcune definizioni e proprietà.
 
 \begin{defin}
-Per un insieme di rette $L$ nel piano $\R^2$, sia $L^{*}= \{\bigcup \ell | \ell \in L\}$, cioè i punti di $\R^2$ coperti da linee di $L$; per un insieme di punti $A \subseteq \R^2$, sia $A^{*}$ l'insieme delle rette per i punti di $A$.
+Per un insieme di rette $L$ nel piano $\R^2$, sia $L^{*}= \{\bigcup \ell | \ell \in L\}$, cioè i punti di $\R^2$ coperti da rette di $L$; per un insieme di punti $A \subseteq \R^2$, sia $A^{*}$ l'insieme delle rette per i punti di $A$.
 \end{defin}
 
 \begin{defin}
-	Un insieme è residuo se il suo complementare è della prima categoria. Un insieme è della prima categoria se unione numerabile di insiemi mai densi (cioè con chiusura a parte interna vuota).
+	Un insieme è residuale se il suo complementare è di prima categoria. Un insieme è di prima categoria se unione numerabile di insiemi mai densi (cioè con chiusura a parte interna vuota).
 \end{defin}
-Osserviamo che intersezione numerabile di aperti densi è un insieme residuo, perché il complementare è unione numerabile di insiemi mai densi.
 
-\begin{lemma}
+\begin{prop}
+	Sono vere le seguenti proprietà:
+	\begin{itemize}
+		\item ogni soprainsieme di un insieme residuale è residuale. In particolare, l'unione arbitraria di insiemi residuali è residuale.
+		\item l'intersezione numerabile di insiemi residuali, è residuale. Inoltre l'intersezione numerabile di aperti densi è un insieme residuale.
+	\end{itemize}
+\end{prop}
+\begin{proof}
+	Passando al complementare, sia $A$ di prima categoria e $B \subseteq A$. Vale $A= \bigcup_n U_n$, con gli $U_n$ mai densi.\\
+	Allora $B= \bigcup_n(B \cap U_n)$, cioè è unione numerabile di insiemi mai densi.\\
+	Sia ora $A=\bigcup_nA_n$, con $A_n$ di prima categoria per ogni $n$, cioè $A_n$ è unione numerabile di insiemi mai densi. Allora anche $A$ è unione numerabile di insiemi mai densi.\\
+	Mostriamo infine che un aperto denso è residuale. Infatti il suo complementare è un chiuso a parte interna vuota.	
+\end{proof}
+
+\begin{lemma} \label{lemma1}
 Sia $A$ aperto del piano e sia $x$ un punto che non appartiene ad $A$. Allora esiste un insieme boreliano di rette $L$ tale che:
 \begin{itemize}
-	\item per ogni punto di $A$, $L$ contiene un insieme residuo di rette;
+	\item per ogni punto di $A$, $L$ contiene un insieme residuale di rette;
 	\item $L^{*} \backslash A$ interseca ogni retta per $x$ in un insieme di misura di Lebesgue nulla.
 \end{itemize}
 \end{lemma}
 
 Ricordiamo che, per Fubini, il sottoinsieme del piano $L^* \setminus A$ ha misura di Lebesgue nulla se e solo se, dato un punto $x$, \emph{quasi} ogni retta per $x$ interseca $L^* \setminus A$ in un insieme di misura lineare nulla.\\
-Il lemma richiede non solo che $L^* \setminus A$ abbia misura nulla, ma anche che intersechi ogni retta per un dato punto in un insieme di misura lineare nulla. 
-Inoltre è la condizione di residualità implica che $L$ copre $A$. Infatti preso un punto di $A$, per il teorema di Baire, se l'insieme di rette di $L$ passanti per esso è residuo, allora è non vuoto.\\
+Il lemma richiede non solo che $L^* \setminus A$ abbia misura nulla, ma anche che intersechi ogni retta per un dato punto in un insieme di misura lineare nulla. \\
+Inoltre è la condizione di residualità implica che $L$ copre $A$. Infatti preso un punto di $A$, per il teorema di Baire, se l'insieme di rette di $L$ passanti per esso è residuale, allora è non vuoto.\\
 
-In questo lemma, i punti e le rette in questione sono tutti affini. Quindi per definire la versione duale del lemma, bisogna dare una formulazione "proiettiva" equivalente, immergendo $\R^2$ in $\P^2\R$. Si ammette che $A$ possa avere punti all'infinito e $L$ possa contenere la retta all'infinito. Si richiede che $x$ non sia all'infinito. Inoltre, la misura di Lebesgue sulla retta diventa la misura di lunghezza su una retta proiettiva (cioè la misura naturale su $\S^1$ quozientato).\\
+In questo lemma, i punti e le rette in questione sono affini. Quindi per definire la versione duale del lemma, bisogna dare una formulazione "proiettiva" equivalente, immergendo $\R^2$ in $\P^2\R$. Si ammette che $A$ possa avere punti all'infinito e $L$ possa contenere la retta all'infinito. Si richiede che $x$ non sia all'infinito. Inoltre, la misura di Lebesgue sulla retta è sostituta dalla misura di lunghezza su una retta proiettiva.\\
 Questa operazione è possibile perché:\\
-- la nozione di misura nulla su una retta è ben definita.\\
-- sto aggiungendo a $L$ al più una retta, quindi la condizione di residualità è invariata.\\
-- sto aggiungendo a $L^* \setminus A$ al più i punti della retta all'infinito. Quindi, data una retta proiettiva passante per $x$, la nozione di trascurabilità della sua intersezione con $L^* \setminus A$ rimane invariata.\\
+\begin{itemize}
+	\item la nozione di misura nulla su una retta è ben definita: con le definizioni date, un sottoinsieme di una retta proiettiva ha misura nulla se e solo se la sua parte affine ha misura di Lebesgue nulla. 
+	\item si aggiunge a $L$ al più una retta, quindi la condizione di residualità è invariata.
+	\item si aggiunge a $L^* \setminus A$ al più i punti della retta all'infinito. Quindi, data una retta proiettiva passante per $x$, la nozione di trascurabilità della sua intersezione con $L^* \setminus A$ rimane invariata.
+\end{itemize}
 Dopo queste osservazioni, ha senso la formulazione duale del lemma, come segue 
 
-\begin{lemma}
+\begin{lemma} \label{lemma2}
 Sia $L$ un insieme aperto di rette e sia $X$ un retta non appartenente a $L$. Allora esiste un insieme boreliano di punti $A$ per cui:
 
-
 \begin{itemize}
-	\item ogni retta di $L$ interseca $A$ in un insieme residuo;
+	\item ogni retta di $L$ interseca $A$ in un insieme residuale;
 	\item per ogni punto di $X$ passano trascurabili rette di $A^{*} \backslash L$.
 \end{itemize}
 \end{lemma}
@@ -185,32 +208,33 @@ Sia $L$ un insieme aperto di rette e sia $X$ un retta non appartenente a $L$. Al
 	Indichiamo con $\lambda$ la misura lineare su una retta proiettiva.
 	
 \begin{proof} 
-	Sia $M$ l'aperto di rette corrispondente nel duale ad $A$ e $X$ la retta proiettiva corrispondente a $x$. Applicando il lemma 2 a questi, esiste un insieme boreliano di punti $B$ per cui:
+	Sia $M$ l'aperto di rette corrispondente nel duale ad $A$ e $X$ la retta proiettiva corrispondente a $x$. Applicando il lemma \ref{lemma2} a questi, esiste un insieme boreliano di punti $B$ per cui:
 	\begin{itemize}
-		\item $\fa \ell \in M, \ell^* \cap B$ è residuo;
+		\item $\fa \ell \in M, \ell^* \cap B$ è residuale;
 		\item $\fa p \in X, \lambda((B^* \setminus M) \cap p^*)=0$
 	\end{itemize}
 	Chiamando $L$ l'insieme di rette che rappresenta nel duale $B$, valgono le seguenti:
 	\begin{itemize}
-		\item 	$\fa p \in A, p^* \cap L$ è residuo;
+		\item 	$\fa p \in A, p^* \cap L$ è residuale;
 		\item 	$\fa \ell \ni x, \lambda((L^* \setminus A) \cap \ell^*)=0$
 	\end{itemize}
 \end{proof}
 
-Possiamo assumere che $X$ sia la retta all'infinito. Allora i punti di $X$ sono direzioni di rette nel piano e le rette di $L$ sono tutte affini. Possiamo formulare il precedente lemma in una versione equivalente.
+Possiamo assumere che $X$ sia la retta all'infinito. Allora i punti di $X$ sono direzioni di rette nel piano e le rette di $L$ sono tutte affini. Possiamo formulare il lemma \ref{lemma2} in una versione equivalente.
 
-\begin{lemma}
+\begin{lemma} \label{lemma2bello}
 Sia $L$ un insieme aperto di rette, allora esiste un insieme di punti $A$ tale che:
 \begin{itemize}
-	\item ogni retta di $L$ intersechi $A$ in un insieme residuo;
+	\item ogni retta di $L$ intersechi $A$ in un insieme residuale;
 	\item in ogni direzione ci siano trascurabili rette di  $A^{*} \backslash L$.
 \end{itemize}
 \end{lemma}
 
-Per dimostrarlo, usiamo il seguente lemma, la cui dimostrazione è riportata nel capitolo successivo.\\
-Introduciamo anche la seguente notazione. Per un dato parallelogramma $P$ (aperto e non degenere) e un intervallo di direzioni $I$, sia $A_{P, I}$ l'insieme di linee per i punti di $P$ in direzioni appartenenti a $I$.
+Per dimostrarlo, usiamo il seguente lemma, la cui dimostrazione è riportata nell'ultima sezione.\\
+Introduciamo anche la seguente notazione. Per un dato parallelogramma $P$ (aperto e non degenere) e un intervallo di direzioni $I$, sia $A_{P, I}$ l'insieme di rette per i punti di $P$ in direzioni appartenenti a $I$.
 
-\begin{lemma}
+\begin{lemma} \label{lemmabrutto}
+	\textcolor{orange}{questa parte è ancora da sistemare}
 Per ogni parallelogramma $P$, numero positivo $\varepsilon$ e intervalli di direzioni $I, J$ tale che $\operatorname{cl}(I) \subset \operatorname{int}(J)$, esistono dei sotto parallelogrammi $P_{1}, P_{2}, \ldots$ tali che:
 \begin{itemize}
 	\item ogni retta che interseca $P$ e la cui direzione appartiene a $I$ interseca anche uno dei parallelogrammi, cioè $\bigcup_{n} A_{P_{n}, I}=A_{P, I}$;
@@ -225,14 +249,14 @@ Se $P=P_{\mathbf{n}}, I=I_{\mathbf{n}}$ e $\varepsilon=\varepsilon_{\mathbf{n}}$
 Scegliamo dei sotto-parallelogrammi aperti razionali $P^{1}, P^{2}, \ldots$ di $P=P_{\mathbf{n}}$ e dei sotto-intervalli aperti razionali $I^{1}, I^{2}, \ldots$ di $I=I_{\mathrm{n}}$ tali che per ogni $\ell \in A_{P, I}$, l'insieme di sotto-parallelogrammi $\left\{P^{j}: \ell \in A_{P^{j}, I^{j}}\right\}$
 sia un ricoprimento di Vitali del segmento $\ell \cap P$. \\
 \textcolor{orange}{Posso avere $I=I_j?$}\\
-Scegliamo $\varepsilon^{j}$ positivi tale che $\sum_{j} \varepsilon^{j}<\varepsilon=\varepsilon_{\mathbf{n}}$ e degli intervalli razionali di direzioni $J^{j}$ tali che $\operatorname{cl}\left(I^{j}\right) \subset \operatorname{int}\left(J^{j}\right)$ e $\sum_{j}\left|J^{j} \backslash I^{j}\right|<\varepsilon$. Si applica il Lemma 5 a tutti i parallelogrammi $P^{j}$, con intervalli $I^{j}, J^{j}$ e numeri $\varepsilon^{j}$. Otteniamo un insieme numerabile di sotto-parallelogrammi di $P$, che chiameremo $P_{\mathbf{n} 1}, P_{\mathbf{n} 2}, \ldots$. Per ogni $m$ per cui il parallelogramma $P_{\mathbf{n} m}$ è ottenuto con il Lemma 5 applicato a $P^{j}, I^{j}, J^{j}, \varepsilon^{j}$, sia $I_{\mathbf{n} m}$ l'intervallo $I^{j}$.\\
-L'insieme $\left\{P^{j}: \ell \in A_{P^{j}, I^{j}}\right\}$ era un ricoprimento di Vitali di $\ell \cap P$ per ogni $\ell \in A_{P^{j}, I^{j}}$; inoltre per il primo punto del Lemma $5, \ell$ interseca uno dei sotto-parallelogrammi ottenuti applicando il lemma a $P^{j}, I^{j}, J^{j}, \varepsilon^{j}$. Quindi l'insieme $\left\{P_{\mathrm{n} m}: \ell \in A_{P_{\mathrm{nm}}, I_{\mathrm{n} m}}\right\}$
+Scegliamo $\varepsilon^{j}$ positivi tale che $\sum_{j} \varepsilon^{j}<\varepsilon=\varepsilon_{\mathbf{n}}$ e degli intervalli razionali di direzioni $J^{j}$ tali che $\operatorname{cl}\left(I^{j}\right) \subset \operatorname{int}\left(J^{j}\right)$ e $\sum_{j}\left|J^{j} \backslash I^{j}\right|<\varepsilon$. Si applica il lemma \ref{lemmabrutto} a tutti i parallelogrammi $P^{j}$, con intervalli $I^{j}, J^{j}$ e numeri $\varepsilon^{j}$. Otteniamo un insieme numerabile di sotto-parallelogrammi di $P$, che chiameremo $P_{\mathbf{n} 1}, P_{\mathbf{n} 2}, \ldots$. Per ogni $m$ per cui il parallelogramma $P_{\mathbf{n} m}$ è ottenuto con il lemma \ref{lemmabrutto} applicato a $P^{j}, I^{j}, J^{j}, \varepsilon^{j}$, sia $I_{\mathbf{n} m}$ l'intervallo $I^{j}$.\\
+L'insieme $\left\{P^{j}: \ell \in A_{P^{j}, I^{j}}\right\}$ era un ricoprimento di Vitali di $\ell \cap P$ per ogni $\ell \in A_{P^{j}, I^{j}}$; inoltre per il primo punto del lemma \ref{lemmabrutto}, $\ell$ interseca uno dei sotto-parallelogrammi ottenuti applicando il lemma a $P^{j}, I^{j}, J^{j}, \varepsilon^{j}$. Quindi l'insieme $\left\{P_{\mathrm{n} m}: \ell \in A_{P_{\mathrm{nm}}, I_{\mathrm{n} m}}\right\}$
 copre un sottoinsieme aperto denso del segmento $\ell \cap P$.\\
 Segue che $\bigcup_{\mathbf{n}=n_{1} n_{2} \cdots n_{k}} P_{\mathbf{n}}$ interseca ogni retta $\ell \in L$ in un insieme aperto denso, quindi, per quanto osservato prima, l'insieme 
 $$
 A:= \bigcap_{k} \bigcup_{\mathbf{n}} P_{\mathbf{n}=n_{1} n_{2} \cdots n_{k}}
 $$
-interseca ogni retta $\ell \in L$ in un insieme residuo, quindi soddisfa la prima condizione del lemma 4.\\
+interseca ogni retta $\ell \in L$ in un insieme residuale, quindi soddisfa la prima condizione del lemma \ref{lemma2bello}.\\
 D'altra parte, se $\ell \notin L$, o $\ell$ non interseca $P_{\mathbf{n}}$ per ogni sequenza $\mathbf{n}$, oppure esiste $\mathbf{n}$ per cui la direzione di $\ell$ non appartiene a $I_{\mathbf{n}}$.\\
 Nel primo caso in particolare si ha che $\ell$ non interseca $A$.\\
 Nel secondo caso, la direzione di $\ell$ non appartiene a $\bigcup_{m_{1} m_{2} \cdots m_{l}} J_{n m_{1} \cdots m_{l}}$ per $l$ abbastanza grande \textcolor{red}{perché? devo ancora usare ipotesi, immagino servano proprio qui}, quindi la proiezione di $\bigcup_{m_{1} m_{2} \cdots m_{l}} P_{\mathbf{n} m_{1} \cdots m_{l}}$ nella direzione di $\ell$ ha misura minore ho uguale a $\sum_{m_{1} m_{2} \cdots m_{l}} \varepsilon_{\mathbf{n} m_{1} \cdots m_{l}} \leq c/2^l$ per un'opportuna costante $c$. Per l'arbitrarietà di $l$, nella direzione di $\ell$ ci sono trascurabili rette che intersecano $A$.
@@ -245,28 +269,28 @@ Se esiste un $P_n$, allora per l abbastanza grande... Trovo che la proiezione or
 
 \newpage
 
-\section{Misurabilità di $L^*$}
+\section{Problema della misurabilità di $L^*$ e teoria di Suslin}
 
-Nel tentativo di generalizzare il teorema per una misura boreliana $\sigma$-finita $\mu$, è necessario che, dato un insieme di rette $L$ boreliano, l'insieme di punti $L^*$ coperto da tali rette sia misurabile rispetto a $\mu$.\\
+Nel tentativo di generalizzare il teorema per una misura boreliana $\sigma$-finita $\mu$, si chiede che, dato un insieme di rette $L$ boreliano, l'insieme di punti $L^*$ coperto da tali rette sia misurabile rispetto a $\mu$.\\
 La dimostrazione di questo fatto richiede l'introduzione di alcuni concetti più generali nell'ambito della teoria della misura.
 
 \begin{defin}
-	Sia $X$ un insieme non vuoto e sia $\mathcal{E}$ una collezione di suoi sottoinsiemi. Diciamo che $\left\{A_{n_{1}, \ldots, n_{k}}\right\}$ è uno schema di Souslin a valori in $\mathcal{E}$ se per ogni sequenza finita di naturali $\left(n_{1}, \ldots, n_{k}\right)$, si ha $A_{n_{1}, \ldots, n_{k}} \in \mathcal{E}$.\\
-	L'A-operazione (o operazione di Souslin) in $\mathcal{E}$ associa a ogni schema di Souslin $\left\{A_{n_{1}, \ldots, n_{k}}\right\}$ a valori in $\mathcal{E}$ l'insieme
+	Sia $X$ un insieme non vuoto e sia $\mathcal{E}$ una collezione di suoi sottoinsiemi. Diciamo che $\left\{A_{n_{1}, \ldots, n_{k}}\right\}$ è uno schema di Suslin a valori in $\mathcal{E}$ se per ogni sequenza finita di naturali $\left(n_{1}, \ldots, n_{k}\right)$, si ha $A_{n_{1}, \ldots, n_{k}} \in \mathcal{E}$.\\
+	L'operazione di Suslin (o A-operazione) in $\mathcal{E}$ associa a ogni schema di Suslin $\left\{A_{n_{1}, \ldots, n_{k}}\right\}$ a valori in $\mathcal{E}$ l'insieme
 	$$
 	A=\bigcup_{\left(n_{i}\right) \in \mathbb{N}^{\infty}} \bigcap_{k=1}^{\infty} A_{n_{1}, \ldots, n_{k}} .
 	$$
-	Gli insiemi in questa forma sono detti di $\mathcal{E}$-Souslin o $\mathcal{E}$-analitici. \\
+	Gli insiemi in questa forma sono detti di $\mathcal{E}$-Suslin o $\mathcal{E}$-analitici. \\
 	La collezione degli insiemi di questo tipo e l'insieme vuoto è indicata con $S(\mathcal{E})$.
 \end{defin}	
 
-Diciamo che uno schema di Souslin è monotono (o regolare) se $A_{n_{1}, \ldots, n_{k}, n_{k+1}} \subset A_{n_{1}, \ldots, n_{k}}$.\\
-Se $\mathcal{E}$ è chiuso per intersezione finita, allora uno schema di Souslin $\left\{A_{n_{1}, \ldots, n_{k}}\right\}$ a valori in $\mathcal{E}$ può essere sostituito da uno schema monotono $\left\{A^*_{n_{1}, \ldots, n_{k}}\right\}$ avente lo stesso risultato dell'$A$-operazione. Infatti basta porre 
+Diciamo che uno schema di Suslin è monotono (o regolare) se $A_{n_{1}, \ldots, n_{k}, n_{k+1}} \subset A_{n_{1}, \ldots, n_{k}}$ per ogni $k$ e per ogni successione $(n_i)$.\\
+Se $\mathcal{E}$ è chiuso per intersezione finita, allora uno schema di Suslin $\left\{A_{n_{1}, \ldots, n_{k}}\right\}$ a valori in $\mathcal{E}$ può essere sostituito da uno schema monotono $\left\{A^*_{n_{1}, \ldots, n_{k}}\right\}$ che dà lo stesso risultato applicando l'operazione di Suslin. Infatti basta porre 
 $$
 A_{n_{1}, \ldots, n_{k}}^{*}:=A_{n_{1}} \cap A_{n_{1}, n_{2}} \cap \cdots \cap A_{n_{1}, \ldots, n_{k}} .
 $$
 
-Mostriamo intanto il seguente lemma, dove con $\left(\mathbb{N}^{\infty}\right)^{\infty}$ indichiamo lo spazio delle successioni $\eta=\left(\eta^{1}, \eta^{2}, \ldots\right)$ con $\eta^{i} \in \mathbb{N}^{\infty}$.
+Mostriamo ora il seguente lemma, dove con $\left(\mathbb{N}^{\infty}\right)^{\infty}$ indichiamo lo spazio delle successioni $\eta=\left(\eta^{1}, \eta^{2}, \ldots\right)$ con $\eta^{i} \in \mathbb{N}^{\infty}$.
 
 \begin{lemma}
 	Esistono delle bigezioni
@@ -285,9 +309,9 @@ Mostriamo intanto il seguente lemma, dove con $\left(\mathbb{N}^{\infty}\right)^
 	
 \end{proof}
 
-Ora usiamo il precedente lemma per mostrare una proprietà generale degli insiemi di Souslin.\\
+Ora usiamo il precedente lemma per mostrare una proprietà generale degli insiemi di Suslin.\\
 
-\begin{teo}
+\begin{teo} \label{SE}
 	\hfill
 	\begin{itemize}
 		\item $S(S(\mathcal{E}))=S(\mathcal{E})$. In particolare, la classe $S(\mathcal{E})$ è chiusa per unioni e intersezioni numerabili.
@@ -313,8 +337,9 @@ Ora usiamo il precedente lemma per mostrare una proprietà generale degli insiem
 		&=\bigcup_{\sigma} \bigcap_{m=1}^{\infty} A_{\sigma_{1}, \ldots, \sigma_{m}}=A
 	\end{aligned}
 	$$
-	Per concludere che $S(\mathcal{E})$ chiuso per intersezioni e unioni numerabili, consideriamo degli insiemi $B_1, B_2...$ in $S(\mathcal{E})$. Allora ponendo $A_{n_1,...,n_k}=B_{n_1}$ se $n_1=...=n_k$ e vuoto altrimenti, l'$A$-operazione dà l'unione numerabile dei $B_n$.\\
-	Similmente, ponendo $A_{1,2,3,...,k}=B_{k}$ e vuoto altrimenti,  l'$A$-operazione dà l'intersezione numerabile dei $B_n$.\\
+	Per concludere che $S(\mathcal{E})$ chiuso per intersezioni e unioni numerabili, consideriamo degli insiemi $B_1, B_2...$ in $S(\mathcal{E})$.\\
+	Allora ponendo $A_{n_1,...,n_k}=B_{n_1}$ se $n_1=...=n_k$ e vuoto altrimenti, l'operazione di Suslin dà l'unione numerabile dei $B_n$.\\
+	Similmente, ponendo $A_{1,2,3,...,k}=B_{k}$ e vuoto altrimenti,  l'operazione di Suslin dà l'intersezione numerabile dei $B_n$.\\
 	(ii) Sia
 	$$
 	\mathcal{F}=\{B \in S(\mathcal{E}): \quad X \backslash B \in S(\mathcal{E})\} .
@@ -329,24 +354,24 @@ Ora usiamo il precedente lemma per mostrare una proprietà generale degli insiem
 \end{defin}	
 
 
-\begin{teo}
-	Sia $\mu$ una misura finita su una $\sigma$-algebra $\mathcal{M}$. Allora la classe $\mathcal{M}_{\mu}$ di tutti gli insiemi $\mu$-misurabili è chiuso rispetto all'A-operazione. Inoltre, data una famiglia di insiemi $\mathcal{E} \subset \mathcal{M}$ chiusa rispetto a unioni finite e intersezioni numerabili vale
+\begin{teo} \label{misurab}
+	Sia $\mu$ una misura finita su una $\sigma$-algebra $\mathcal{M}$. Allora la classe $\mathcal{M}_{\mu}$ di tutti gli insiemi $\mu$-misurabili è chiusa rispetto all'operazione di Suslin. Inoltre, data una famiglia di insiemi $\mathcal{E} \subset \mathcal{M}$ chiusa rispetto a unioni finite e intersezioni numerabili vale
 	$$
 	\mu^{*}(A)=\sup \{\mu(E): E \subset A, E \in \mathcal{E}\}
 	$$
-	per ogni $\mathcal{E}$-insieme di Souslin $A$. In particolare, ogni $\mathcal{E}$-insieme di Souslin è $\mu$-misurabile.
+	per ogni $\mathcal{E}$-insieme di Suslin $A$. In particolare, ogni $\mathcal{E}$-insieme di Suslin è $\mu$-misurabile.
 \end{teo}
 
 \begin{proof}
 	Il primo enunciato segue applicando il secondo alla famiglia $\mathcal{E}=\mathcal{M}_{\mu}$, perché $\mathcal{M}_{\mu}$ soddisfa le ipotesi del secondo enunciato, quindi si ha $S(\mathcal{M}_{\mu}) \subseteq \mathcal{M}_{\mu} \subseteq S(\mathcal{M}_{\mu})$.\\
-	Per mostrare il secondo enunciato, sia $A$ costruito con l'A-operazione a partire da uno schema di Souslin di insiemi $E_{n_{1}, \ldots, n_{k}} \in \mathcal{E}$. Siccome $\mathcal{E}$ chiuso per intersezione finita, posso supporre che sia uno schema monotono.\\
-	Sia $\varepsilon>0$. Per ogni collezione $m_{1}, \ldots, m_{k}$ di numeri naturali, indichiamo con $D_{m_{1}, \ldots, m_{k}}$ l'unione di $E_{n_{1}, \ldots, n_{k}}$ per $n_{1} \leq m_{1}, \ldots, n_{k} \leq m_{k}$. Poiché lo schema di Souslin è decrescente, anche la famiglia $D_{m_1,...,m_k}$ è decrescente in $k$.\\
+	Per mostrare il secondo enunciato, sia $A$ costruito con l'operazione di Suslin a partire da uno schema di Suslin di insiemi $E_{n_{1}, \ldots, n_{k}} \in \mathcal{E}$. Siccome $\mathcal{E}$ chiuso per intersezione finita, posso supporre che sia uno schema monotono.\\
+	Sia $\varepsilon>0$. Per ogni collezione $m_{1}, \ldots, m_{k}$ di numeri naturali, indichiamo con $D_{m_{1}, \ldots, m_{k}}$ l'unione di $E_{n_{1}, \ldots, n_{k}}$ per $n_{1} \leq m_{1}, \ldots, n_{k} \leq m_{k}$. Poiché lo schema di Suslin è decrescente, anche la famiglia $D_{m_1,...,m_k}$ è decrescente in $k$.\\
 	Sia
 	$$
 	M_{m_{1}, \ldots, m_{k}}:=\bigcup_{\left(n_{i}\right) \in \mathbb{N}^{\infty}, n_{1} \leq m_{1}, \ldots, n_{k} \leq m_{k}}^{\infty} \bigcap_{j=1}^{\infty} E_{n_{1}, \ldots, n_{j}} .
 	$$
 	Per $k, m_1,...,m_k \rightarrow \infty$, gli insiemi $M_{m_1,...,m_k}$ tendono crescendo ad $A$ e, fissati $m_{1}, \ldots, m_{k}$ gli insiemi $M_{m_{1}, \ldots, m_{k}, m}$  tendono crescendo a $M_{m_{1}, \ldots, m_{k}}$ per $m \rightarrow \infty$.\\
-	Ricordando che la misura esterna passa al limite per unioni numerabili monotone, esiste un numero $m_{1}$ con $\mu^{*}\left(M_{m_{1}}\right)>\mu^{*}(A)-\varepsilon 2^{-1}$. Nello stesso modo esiste un numero $m_{2}$ con $\mu^{*}\left(M_{m_{1}, m_{2}}\right)>\mu^{*}\left(M_{m_{1}}\right)-\varepsilon 2^{-2}$. Induttivamente, otteniamo una successione di naturali $m_{k}$ tali che
+	Ricordando che la misura esterna passa al limite per unioni numerabili monotone  \textcolor{red}{spiegare}, esiste un numero $m_{1}$ con $\mu^{*}\left(M_{m_{1}}\right)>\mu^{*}(A)-\varepsilon 2^{-1}$. Nello stesso modo esiste un numero $m_{2}$ con $\mu^{*}\left(M_{m_{1}, m_{2}}\right)>\mu^{*}\left(M_{m_{1}}\right)-\varepsilon 2^{-2}$. Induttivamente, otteniamo una successione di naturali $m_{k}$ tali che
 	$$
 	\mu^{*}\left(M_{m_{1}, m_{2}, \ldots, m_{k}}\right)>\mu^{*}\left(M_{m_{1}, m_{2}, \ldots, m_{k-1}}\right)-\varepsilon 2^{-k} .
 	$$
@@ -365,13 +390,15 @@ Ora usiamo il precedente lemma per mostrare una proprietà generale degli insiem
 
 \end{proof}
 
-Torniamo ora al contesto del teorema di Davies
+Torniamo al contesto del teorema di Davies e utilizziamo i precedenti teoremi per dimostrare il seguente risultato.
+
 \begin{teo}
 	Dato un insieme di rette affini $L$ boreliano e una misura $\sigma$-finita boreliana $\mu$, allora $L^*$ è misurabile rispetto a $\mu$.
 \end{teo}
 \begin{proof}
-Scegliendo come $\mathcal{E}=\mathcal{K}$, l'insieme dei compatti nello spazio delle linee (cioè compatti di $\P^2 \R$), le ipotesi del teorema ... sono verificate: infatti ogni aperto di $\P^2 \R$ è unione numerabile di compatti e $\varnothing \in \mathcal{K}$. Quindi $\sigma(\mathcal{K})=\mathcal{B} \subseteq S(\mathcal{K})$ dove con ${\cal B}$ si indicano i boreliani di $\P^2R$.\\
-Per il teorema ... e poiché $\mathcal{K}$ chiuso per intersezione finita, esiste uno schema di Souslin monotono di insiemi compatti di rette che rappresenta $L$ tramite l'operazione di Suslin, cioè
+Sia $\mathcal{K}$ l'insieme dei compatti nello spazio delle rette proiettive (cioè compatti di $\P^2 \R$).
+Scegliendo $\mathcal{E}=\mathcal{K}$, le ipotesi del teorema \ref{SE} sono verificate: infatti ogni aperto di $\P^2 \R$ è unione numerabile di compatti e $\varnothing \in \mathcal{K}$. Quindi $\sigma(\mathcal{K})=\mathcal{B} \subseteq S(\mathcal{K})$ dove con ${\cal B}$ si indicano i boreliani di $\P^2\R$.\\
+Quindi per il teorema \ref{SE} e poiché $\mathcal{K}$ chiuso per intersezione finita, esiste uno schema di Suslin monotono di insiemi compatti di rette che rappresenta $L$ tramite l'operazione di Suslin, cioè
 $$L=\bigcup_{{\bf n}\in{\bf N}^\infty}\bigcap_{k=1}^\infty K_{n_1,\ldots,n_k}$$
 con $K_{n_1,\ldots,n_k}\in {\cal K}$.\\
 Siccome la mappa $L \mapsto L^*$ commuta con l'unione arbitraria, vale
@@ -379,16 +406,16 @@ $$L^*=\bigcup_{{\bf n}\in{\bf N}^\infty}\biggl(\bigcap_{k=1}^\infty K_{n_1,\ldot
 
 Mostriamo che tale mappa commuta anche con intersezioni decrescenti di compatti, cioè
 $$\biggl(\bigcap_{k=1}^\infty K_{n_1,\ldots,n_k}\biggr)^*=\bigcap_{k=1}^\infty K^*_{n_1,\ldots,n_k}\leqno $$
-L'inclusione $\subseteq$ è sempre vera. Viceversa, sia $x$ per cui esistono linee ${\ell_k}$ per cui $x\in \ell_k\in K^*_{n_1,\ldots,n_k}$ per ogni $k$. Per compattezza esiste una linea $\ell$, limite di una sottosuccessione delle $\ell_k$ che per monotonia deve appartenere a tutti i $K^*_{n_1,\ldots,n_k}$. Inoltre poiché il passaggio per $x$ è una condizione chiusa, $\ell$ contiene ancora $x$.\\
+L'inclusione $\subseteq$ è sempre vera. Viceversa, sia $x$ per cui esistono rette ${\ell_k}$ per cui $x\in \ell_k\in K^*_{n_1,\ldots,n_k}$ per ogni $k$. Per compattezza esiste una retta $\ell$, limite di una sottosuccessione delle $\ell_k$ che per monotonia deve appartenere a tutti i $K^*_{n_1,\ldots,n_k}$. Inoltre $\ell$ contiene ancora $x$.\\
 
-Se mostriamo che i $K^*_{n_1,\ldots,n_k}$ sono analitici, poiché l'operazione di Suslin mantiene l'analiticità, anche $L^*$ analitico.\\
-Siccome $L$ insieme di linee affini e lo schema di Souslin è monotono, posso supporre che ogni $K_{n_1,...,n_k}$ non contenga la retta all'infinito.\\
+Se mostriamo che i $K^*_{n_1,\ldots,n_k}$ sono analitici, poiché l'operazione di Suslin mantiene l'analiticità, anche $L^*$ analitico. Applicando il teorema \ref{misurab}, segue la misurabilità di $L^*$ rispetto a $\mu$.\\
+Siccome $L$ insieme di rette affini e lo schema di Suslin è monotono, posso supporre che ogni $K_{n_1,...,n_k}$ non contenga la retta all'infinito.\\
 Sia quindi $K$ insieme di rette affini compatto. Alla retta di equazione $a+bx+cy=0$ associo l'equazione omogenea $ax_0+bx_1+cx_2=0$.\\
 
 Il sottoinsieme $K_0$ delle rette in $K$ che sono verticali è un compatto. Quindi i punti di $K_0^*$ appartengono al prodotto di un compatto per $\R$, che è analitico perché chiuso.\\
 
 L'insieme $K_1$ delle rette in $K$ non verticali è omeomorfo a un chiuso di $\R^2$ tramite la carta $[a,b,c] \mapsto (a/c,b/c)$ (ricordiamo che $[a,b,c]$ identifica la retta di equazione $ax_0+bx_1+cx_2=0$ e che la condizione di non verticalità è data da $c \neq 0$).\\
-In questo modo, un insieme di rette parametrizzate da un rettangolo di $\R^2$, è l'insieme di rette passanti per un intervallo dell'asse $y$ aventi direzioni in un certo intervallo. Allora l'insieme di punti coperto da tali linee è un boreliano, quindi analitico.\\
+In questo modo, un insieme di rette parametrizzate da un rettangolo di $\R^2$, è l'insieme di rette passanti per un intervallo dell'asse $y$ aventi direzioni in un certo intervallo. Allora l'insieme di punti coperto da tali rette è un boreliano, quindi analitico.\\
 Ora, dato un chiuso $C$ di $\R^2$, esistono rettangoli aperti per cui $\bigcup_n A_n = C^c$. Detti $B_n = \bigcup_{m=1}^n A_m$, allora $\bigcup_n B_n = C^c$. Siano $R_m$ rettangoli chiusi tali che $\bigcup_m R_m = \R^2$. Allora $\bigcap_n(B_n^c \cap R_m)=C \cap R_m$ è intersezione numerabile decrescente di compatti, ciascuno dei quali è unione finita di rettangoli. Inoltre $C=\bigcup_m(R_m \cap C)$. Quindi utilizzando unioni numerabili e intersezioni numerabili monotone di compatti, otteniamo che la tesi è vera per ogni chiuso $C$.
 \end{proof}
 \textcolor{red}{ripensare a mu finita/sigma finita}
@@ -397,13 +424,13 @@ Ora, dato un chiuso $C$ di $\R^2$, esistono rettangoli aperti per cui $\bigcup_n
 
 \section{Generalizzazione per $\mu$ boreliana $\sigma$-finita}
 
-In questa sezione generalizziamo il teorema di Davies per una generica misura $\mu$ boreliana $\sigma$-finita, dimostrando il seguente teorema.
+In questa sezione generalizziamo il teorema di Davies, dimostrando il seguente teorema.
 
 
-\begin{teo}
+\begin{teo} \label{teo1}
 	Sia $\mu$ una misura boreliana $\sigma$-finita del piano. Allora per ogni insieme misurabile $A \subset \mathbb{R}^{2}$, esiste un insieme boreliano di rette $L$ tale che:
 	\begin{itemize}
-		\item per ogni punto di $A$ ci sia un insieme residuo di rette di $L$, (cioè l'insieme delle direzioni delle rette di $L$ contenenti il punto sia residuo).
+		\item per ogni punto di $A$ passi un insieme residuale di rette di $L$, (cioè l'insieme delle direzioni delle rette di $L$ contenenti il punto sia residuale).
 		\item $\mu\left(L^{*}\right)=\mu(A)$.
 	\end{itemize}
 \end{teo}
@@ -411,35 +438,39 @@ In questa sezione generalizziamo il teorema di Davies per una generica misura $\
 Usando le nozioni di dualità definite in una sezione precedente, possiamo formulare anche il teorema generalizzato in forma duale come segue.
 
 \begin{teo}
-	Per una misura boreliana $\sigma$-finita $\mu$ sulle rette e per un insieme misurabile di rette $L$, esiste un insieme boreliano di punti $A$ tale che:
+	Per una misura boreliana $\sigma$-finita $\tilde \mu$ sulle rette e per un insieme misurabile di rette $L$, esiste un insieme boreliano di punti $A$ tale che:
 	\begin{itemize}
-		\item ogni retta di $L$ intersechi $A$ in un insieme residuo.
-		\item $\mu\left(A^{*}\right)=\mu(L)$.
+		\item ogni retta di $L$ intersechi $A$ in un insieme residuale.
+		\item $\tilde \mu\left(A^{*}\right)=\tilde \mu(L)$.
 	\end{itemize}
 \end{teo}
 
 \begin{proof}[Assumendo il Teorema di Davies]
-	\textcolor{red}{ma è fattibile?}
+	\textcolor{red}{da sistemare, incompleto}
 	Sia $A \in \P^2\R$ il duale di $L$. A  Per il Teorema di Davies, sia $M$ insieme di rette tale che $A \subseteq M^*$ e $\mu(M^*)=\mu(A)$. Sia allora $P = \bigcup_{\ell\in M}p_\ell$. Usando l'osservazione precedente, $M^*$ è il duale di $P^*$. Segue subito che $L \subseteq P^*$ e che $|P^*|=|M^*|=|A|=|L|$.
 \end{proof}
 
 Ora ci concentriamo sul il primo enunciato, la cui dimostrazione prevede alcuni passi.
 
-\begin{lemma}
-	Nel primo enunciato del teorema ... \textcolor{red}{etichette e nomi}, posso supporre $A$ aperto.
+\begin{lemma} \label{Aaperto}
+	Nel teorema \ref{teo1}, posso supporre $A$ aperto.
 \end{lemma}
 
 \begin{proof}
 	Se $A$ misurabile, allora esiste $G_{\delta} = \bigcap_{n=1}^{\infty} G_{n} \supseteq A$ della stessa misura, con $G_{1} \supset G_{2} \supset \cdots$ aperti.\\
 	Quindi se il teorema è verificato per gli aperti $G_{1}, G_{2}, \ldots$ e per l'insieme di rette $L_{1}, L_{2}, \ldots$, allora è anche verificato per  $A=\bigcap_{n=1}^{\infty} G_{n}$ e $L=\bigcap_{n=1}^{\infty} L_{n}$.\\
-	Infatti sia $x \in G_{\delta} \subseteq G_i \quad \fa i \Ra$ l'insieme delle rette di $L_i$ per $x$ è residuo per ogni $i$. L'intersezione numerabile di tali insiemi è ancora un insieme residuo (al complementare, unione numerabile di insiemi di prima categoria è di prima categoria), in particolare è non vuoto, quindi $A \subseteq L^*$.\\
-	Inoltre, $\mu(A) = \lim_n \mu(G_n) = \lim_n \mu(L_n^*) \geq \mu\left(\bigcap_{n=1}^\infty L_n^*\right) \geq \mu\left(\left(\bigcap_{n=1}^\infty L_n\right)^*\right) = \mu(L^*) \geq \mu(A)$.	\\
+	Infatti sia $x \in G_{\delta} \subseteq G_i \quad \fa i \Ra$ l'insieme delle rette di $L_i$ per $x$ è residuale per ogni $i$. L'intersezione numerabile di tali insiemi è ancora un insieme residuale, in particolare è non vuoto, quindi $A \subseteq L^*$.\\
+	Inoltre, $\mu(A) = \lim_n \mu(G_n) = \lim_n \mu(L_n^*) \geq \mu\left(\bigcap_{n=1}^\infty L_n^*\right) \geq \mu\left(\left(\bigcap_{n=1}^\infty L_n\right)^*\right) = \mu(L^*) \geq \mu(A)$. \\
 \end{proof}
 
 
 \begin{proof}
 Posso assumere $\mu$ a supporto compatto $K$ disgiunto da $A$.\\
-Infatti, siano $K_{1} \subset K_{2} \subset \cdots$ compatti di $\mathbb{R}^{2} \backslash A$ tali che $\mu\left(\left(\mathbb{R}^{2} \backslash A\right) \backslash \bigcup_{n} K_{n}\right)=0$ e sia $\mu_{n}$ la restrizione di $\mu$ all'insieme $K_{n}$. Basta mostrare che esiste un insieme di rette $L_{n}$ tali che la tesi valga per $L_{n}$ e $\mu_{n}$. Infatti, con una dimostrazione simile a quella del lemma ... \textcolor{red}{scriverla}, la tesi vale per $\bigcap_{n=1}^{\infty} L_{n}$ e $\mu$.\\
+Infatti, siano $K_{1} \subset K_{2} \subset \cdots$ compatti di $\mathbb{R}^{2} \backslash A$ tali che $\mu\left(\left(\mathbb{R}^{2} \backslash A\right) \backslash \bigcup_{n} K_{n}\right)=0$ e sia $\mu_{n}$ la restrizione di $\mu$ all'insieme $K_{n}$. Supponiamo che per ogni $n$ la tesi valga per $\mu_n$ a supporto compatto e per un insieme di rette $L_n$.\\
+L'insieme $L=\bigcap_n L_n$ allora soddisfa la tesi.\\
+Infatti, la condizione di residualità rimane inalterata perché passa a intersezioni numerabili.\\
+Inoltre ricordando che $\mu(K_n \cap A)=\mu(K_n \cap L_n^*)=0$ per ipotesi, si ha 
+$\mu(A)=\lim_n\mu(K_n^c)=\lim_n\mu(L_n^* \cup K_n^c) \geq \lim_n \mu(L_n^*) \geq \mu\left(\bigcap_{n=1}^\infty L_n^*\right) \geq \mu\left(\left(\bigcap_{n=1}^\infty L_n\right)^*\right) = \mu(L^*) \geq \mu(A)$.\\
 
 Mostriamo che posso assumere che $A=B(x, r) \backslash\{x\}$ e $B(x, 2 r)$ sia disgiunta da $K$.\\
 Scegliamo numerabili palle aperte $B\left(x_{n}, r_{n}\right)$ tali che
@@ -447,9 +478,10 @@ $$
 A \subset \bigcup_{n}\left(B\left(x_{n}, r_{n}\right) \backslash\left\{x_{n}\right\}\right)
 $$
 e $B\left(x_{n}, 2 r_{n}\right) \cap K=\varnothing$ per ogni $n$.\\
-Basta mostrare che esiste un insieme di rette $L_{n}$ tale che la tesi valga per $B\left(x_{n}, r_{n}\right) \backslash\left\{x_{n}\right\}$ e $\mu$.\\
-Infatti $\bigcup_n L_n$ copre $A$; inoltre per ogni $n$, $\mu(L_n^* \backslash B(x_n,r_n))=\mu(L_n^*)=0$ perché il supporto di $\mu$ è $K$ disgiunto da $B(x_n,r_n))$, quindi $\mu((\bigcup_nL_n)^*) \leq \mu(\bigcup_n L_n^*)=0$.\\
-Per brevità, assumiamo che $A=B(0,1) \backslash\{0\}$ e $B(0,2) \cap K=\varnothing$. Applichiamo il lemma 2 ad $A$ e $x=0$, e sia $M$ l'insieme di rette così ottenuto.\\
+Basta mostrare che per ogni $n$ esiste un insieme di rette $L_{n}$ tale che la tesi valga per $B\left(x_{n}, r_{n}\right) \backslash\left\{x_{n}\right\}$. Infatti definendo $L=\bigcup_n L_n$, mostriamo che la tesi vale per $A$.\\
+La condizione di residualità passa a unioni arbitrarie.\\
+Inoltre per ogni $n$, $\mu(B(x_n,r_n))=\mu(L_n^*)=0$ per ipotesi, quindi $\mu(L)=\mu((\bigcup_nL_n)^*) = \mu(\bigcup_n L_n^*)=0$.\\
+Per brevità, assumiamo che $A=B(0,1) \backslash\{0\}$ e $B(0,2) \cap K=\varnothing$. Applichiamo il lemma \ref{lemma1} ad $A$ e $x=0$ e sia $M$ l'insieme di rette così ottenuto.\\
 \hfill \\
 Sia $M^{* *}=M^{*} \backslash B(0,1)$. Consideriamo lo spazio
 $$
@@ -459,7 +491,7 @@ dove $\lambda$ è la misura di Lebesgue sulla retta e consideriamo il sottoinsie
 $$
 \left\{(x, t) \in \mathbb{R}^{2} \times \mathbb{R}: t x \in M^{* *}\right\} .
 $$
-Poiché $M$ soddisfa la seconda condizione del lemma 2, $M^{**}$ interseca ogni retta per l'origine in un insieme di misura di Lebesgue nulla, cioè per ogni $x \neq 0$ vale $\lambda(\{t: tx \in M^{**}\})=0$. In altre parole, tutte le sezioni verticali di questo sottoinsieme per $y\neq 0$  hanno misura di Lebesgue nulla. Quindi quasi ogni sezione orizzontale ha misura nulla e possiamo scegliere un numero $u$ tale che $1 / 2<u<1$ e $\mu\left(\left\{x: u x \in M^{* *}\right\}\right)=0$, e porre $t=1 / u$. Quindi $1<t<2$ e $\mu\left(t M^{* *}\right)=0$.\\
+Poiché $M$ soddisfa la seconda condizione del lemma \ref{lemma1}, $M^{**}$ interseca ogni retta per l'origine in un insieme di misura di Lebesgue nulla, cioè per ogni $x \neq 0$ vale $\lambda(\{t: tx \in M^{**}\})=0$. In altre parole, tutte le sezioni verticali di questo sottoinsieme per $y\neq 0$  hanno misura di Lebesgue nulla. Quindi quasi ogni sezione orizzontale ha misura nulla e possiamo scegliere un numero $u$ tale che $1 / 2<u<1$ e $\mu\left(\left\{x: u x \in M^{* *}\right\}\right)=0$, e porre $t=1 / u$. Quindi $1<t<2$ e $\mu\left(t M^{* *}\right)=0$.\\
 Ricordiamo che poiché $M$ boreliano, allora $M^*, M^{**}$ e i suoi omotetizzati sono misurabili rispetto a $\mu$.\\
 Affermiamo che $t M$ soddisfa la tesi.\\
 Siccome $M$ contiene residue rette per ogni punto di $B(0,1) \backslash\{0\}$, $t M$ contiene residue rette per i punti di $t B(0,1) \backslash\{0\}$, ma $t B(0,1) \backslash\{0\} \supset B(0,1) \backslash\{0\}=A$ quindi è vera la prima affermazione.\\
@@ -479,12 +511,16 @@ Siccome $\mu\left(t M^{* *}\right)=0$, anche $\mu (tM^*)= 0= \mu(A)$.
 
 \section{Costruzione per parallelogrammi}
 
-Per dimostrare il lemma 5, introduciamo una costruzione geometrica (detta "venetian blind"), che a un parallelogramma $P_1$, associa dei sotto-parallelogrammi con certe proprietà.\\
+Per dimostrare il lemma \ref{lemmabrutto}, introduciamo una costruzione geometrica (detta "venetian blind"), che a un parallelogramma $P$, associa dei sotto-parallelogrammi con certe proprietà.\\
 Consideriamo il parallelogramma non degenere $P=A_{1} A_{2} A_{3} A_{4}$, con punti medi dei lati $B_{1}, B_{2}, B_{3}, B_{4}$, come in figura 1. Sia $C$ il centro del parallelogramma. Il primo passo consiste nel scegliere i due sotto-parallelogrammi $A_{1} C B_{3} B_{4}$ e $B_{1} B_{2} A_{3} C$ (evidenziati in figura).
 
-\begin{center}
-	\includegraphics[width=0.5\columnwidth]{passo1.png}
-\end{center}
+
+	\begin{figure} [h!]
+	\includegraphics[width=0.5\columnwidth]{passo1grigio.png}
+	\centering
+	\caption{Figura 1}
+	\end{figure}
+
 
 Ora ripetiamo il procedimento per ciascuno dei nuovi parallelogrammi. Iterando per un numero finito di passi, si ottengono un numero finito di sotto-parallelogrammi di $P$. Nella figura 2 sono mostrati i primi tre passi e sono evidenziati gli otto parallelogrammi ottenuti.\\
 
@@ -507,7 +543,7 @@ Nello stesso modo, ogni retta in direzione in $D_1$ o $D_2$ che interseca $A_{1}
 Induttivamente, all'$n$-esimo passo, le rette in direzioni appartenenti a $\bigcup_{i=1}^n D_i$ intersecano l'unione dei parallelogrammi costruiti all'$n$-esimo passo, se intersecano uno dei parallelogrammi del passo $n-1$. In particolare una retta in direzione in $D_1$ che interseca $P$, interseca uno dei parallelogrammi dell'$n$-esimo passo.\\
 Inoltre la misura della proiezione dell'unione dei parallelogrammi dell'$n$-esimo passo sulla retta $A_{1} A_{4}$ è al più $2 \cdot\left|A_{1} A_{4}\right|$ in ogni direzione in $\bigcup_{i=2}^{n+1}D_i$.\\
 
-\begin{lemma}
+\begin{lemma} \label{altroarticolo}
 	Sia $I=\left\{I^{1}, I^{2}, \ldots, I^{m}\right\}$ un insieme finito di intervalli due a due disgiunti di direzioni e sia $J=\left\{J^{1}, J^{2}, \ldots, J^{m}\right\}$ un insieme di sotto intervalli stretti (cioè, $\operatorname{cl}\left(J^{j}\right) \subset \operatorname{int} I^{j}$ per ogni $j$). Allora per ogni parallelogramma $T$ e $\varepsilon>0$ esistono dei parallelogrammi disgiunti $T_{1}, T_{2}, \ldots \subset T$ tali che:
 	
 	\begin{itemize}
@@ -527,7 +563,7 @@ Inoltre la misura della proiezione dell'unione dei parallelogrammi dell'$n$-esim
 	\end{itemize}	
 	Detti questi $\{T_n\}_{n \in \N}$, applichiamo la procedura esposta sopra ad ogni $T_i$, in modo che il lato $A_1A_4$ sia in direzione $a$, con riferimento alla notazione precedente.\\
 	Il numero di passi necessario è indipendente dal $T_i$ scelto ed è dato dalla seguente osservazione: poiché $\operatorname{cl}(J) \subsetneq(a, b)$, esiste $\rho >0$ tale che $J \subset (a+\rho,b)$. Quindi esiste un certo $n$ per cui $J \subseteq \bigcup_{i=2}^{n+1}D_i$.\\
-	Con questa procedura si ottiene un nuovo sistema di sotto-parallelogrammi e la misura della proiezione (non ortogonale) dell'unione di questi sulla linea di direzione $a$ è minore di $2 \cdot \frac{1}{2} \varepsilon=\varepsilon$ in ogni direzione in $J$. Quindi, la misura della proiezione ortogonale in ogni direzione in $J$ è minore di $\varepsilon$.\\
+	Con questa procedura si ottiene un nuovo sistema di sotto-parallelogrammi e la misura della proiezione (non ortogonale) dell'unione di questi sulla retta di direzione $a$ è minore di $2 \cdot \frac{1}{2} \varepsilon=\varepsilon$ in ogni direzione in $J$. Quindi, la misura della proiezione ortogonale in ogni direzione in $J$ è minore di $\varepsilon$.\\
 	Infine siccome $D_1 =(a,b)^c$ e $(a,b) \subseteq I$, allora $I^c \subseteq D_1$. Quindi ogni retta in direzione di $I^c$ che interseca uno dei $T_i$, interseca anche uno dei finiti sotto-parallelogrammi di $T_i$ definiti all'$n$-esimo passo.\\
 \end{proof}
  \textcolor{red}{scambiare I, J}
