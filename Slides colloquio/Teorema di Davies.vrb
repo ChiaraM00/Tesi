@@ -1,0 +1,13 @@
+Per enunciare il rafforzamento del teorema di Davies, diamo prima le seguenti definizioni.\\
+	\pause	
+	\begin{defin}
+	Un insieme è della \textbf{prima categoria} se unione numerabile di insiemi mai densi (cioè con chiusura a parte interna vuota).\\ \pause
+	Un insieme è \textbf{residuo} se il suo complementare è della prima categoria.
+	\end{defin}
+	\pause
+	\begin{defin}
+	Dato un insieme di rette nel piano $L$, indichiamo con $L^*$ l'insieme di punti coperti da rette di $L$.\\
+	\pause
+	Similmente, dato un insieme di punti nel piano $A$, indichiamo con $A^*$ l'insieme delle rette passanti per punti di $A$.
+	\end{defin}
+

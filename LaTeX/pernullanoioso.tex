@@ -1,0 +1,75 @@
+
+
+\documentclass[11pt]{article}
+
+\usepackage[utf8]{inputenc} 
+\usepackage{graphicx}
+\usepackage{amsmath,amsthm,amssymb,mathtools,amsfonts}
+\usepackage{enumitem}
+\usepackage[italian]{babel}
+\usepackage{geometry}
+\geometry{
+	a4paper,
+	total={160mm,257mm},
+	left=25mm,
+	top=30mm,
+}
+
+\setlength{\parindent}{0pt}
+\pagenumbering{arabic}
+
+\newcommand{\ra}{\rightarrow}
+\newcommand{\Ra}{\Rightarrow}
+\newcommand{\LRa}{\Leftrightarrow}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\Z}{\mathbb{Z}}
+\renewcommand{\P}{\mathbb{P}}
+\renewcommand{\S}{\mathbb{S}}
+\newcommand{\D}{\mathbb{D}}
+\newcommand{\parti}{\mathcal{P}}
+\newcommand{\fa}{\forall}
+\newcommand{\fo}{\forall}
+\newcommand{\e}{\varepsilon}
+\newcommand{\<}{\langle}
+\renewcommand{\>}{\rangle}
+\newcommand{\E}{\mathcal{E}}
+\newcommand{\A}{\mathcal{A}}
+
+
+\begin{document}
+	
+
+	\section*{Costruzioni paradossali in Teoria della Misura: il Teorema di Davies}
+	Questo è un riassunto della mia tesi, in cui spiego cosa ho fatto. I concetti talvolta sono molto elementari e intutivi, ma il risultato finale non lo è.\\
+	
+	\textbf{Misura nel piano}\\
+	Intuitivamente, la misura di un insieme è la sua area.\\
+	La misura di area è detta misura di Lebesgue nel piano. La misura di Lebesgue di un rettangolo è uguale a "base per altezza". Inoltre la misura di Lebesgue di una retta o di un punto nel piano sono nulle.\\
+	Posso generalizzare questa nozione intuitiva, definendo delle misure distribuite diversamente. Ad esempio, per un rettangolo, la sua misura potrebbe non essere più "base per altezza", ma qualcosa di molto strano.\\
+	Comunque c'è un po' di coerenza: se ho un rettangolo grande che contiene un rettangolo piccolo, la misura del rettangolo grande deve essere maggiore o uguale di quella del rettangolo piccolo.\\
+
+	Segue la definizione formale di misura (con piccole semplificazioni), dove sono spiegate le proprietà di coerenza. Se non si capisce, pazienza, si può andare alla scritta in grassetto.\\
+	Dato un insieme $X$ (può essere ad esempio il piano, ma anche qualcosa di molto più complicato), una misura è una funzione $\mu$ che associa a ogni sottoinsieme di $X$ un numero reale e che soddisfa le seguenti proprietà:\\
+	- non-negatività: per ogni $E$ sottoinsieme di $X$ vale $\mu(E)\geq0$.\\
+	- insieme vuoto: $ \mu (\varnothing )=0$.\\
+	- additività: dati due insiemi $A,B$ disgiunti, $\mu(A \cup B)= \mu (A)+ \mu(B)$. (Vale anche per unioni di infiniti insiemi, non solo due).\\
+	
+	Queste proprietà sono molto sensate perché sono intuitive se pensiamo alla misura di Lebsegue in una/due/tre dimensioni (cioè per le misure di lunghezza, area, volume).\\
+	Un altro esempio è quello delle misure di probabilità, cioè misure in cui si chiede che la misura di tutto $X$ sia 1.\\
+	Ad esempio $X$ può essere l'insieme di esiti di un lancio di dado. Ogni esito ha misura 1/6. Pensandoci un po', si vede che le proprietà scritte sopra sono tutte verificate.\\
+
+	\textbf{Arriviamo alla tesi vera e propria.}\\
+	Nel 1952 R. O. Davies dimostrò il seguente enunciato, apparentemente paradossale. Dato un insieme $A$ nel piano, esiste un insieme di rette $L$ tali che:\\
+	- per ogni punto di $A$ passa una retta di $L$;\\
+	- l'insieme di punti coperto dalle rette di $L$ ha la stessa misura di Lebesgue (cioé la stessa area) di $A$.\\
+	L'obiettivo è dimostrare una generalizzazione del teorema per una generica misura nel piano.\\
+	Il primo passo è mostrare una versione del teorema di Davies nel caso della misura della Lebesgue e $A$ con certe proprietà. Lo sviluppo di questa sezione richiede l'introduzione di una nozione di dualità (cioè una corrispondenza tra rette e punti). Inoltre sono usate costruzioni geometriche nel piano, che permettono di costruire collezioni infinite di parallelogrammi con determinate caratteristiche.\\
+	Il secondo passo è generalizzare come dicevo sopra.
+	
+	
+	
+	
+\end{document}

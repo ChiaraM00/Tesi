@@ -130,7 +130,7 @@ Dato un insieme di rette $L$ in $\R^2$ e una direzione $d$, sia $L_{d}$ l'insiem
 
 A meno passare alle chiusura proiettiva, $L_{d}$ è un sottoinsieme di rette passanti per un fissato punto all'infinito $Q$.\\
 Come prima, la misura $\tilde \theta$ di $L_d$ è nulla, ma esiste una misura su tale insieme, indotta dalla misura lineare su $\ell_Q$.\\
-Si osserva che $L_d$ è trascurabile rispetto a questa misura, se e solo se per ogni $t_d$ retta ortogonale alla direzione $d$, $ (\bigcup L_d) \cap t_d$ ha misura lineare nulla.\\
+Si osserva che $L_d$ è trascurabile rispetto a questa misura se e solo se per ogni $t_d$ retta ortogonale alla direzione $d$, $ (\bigcup L_d) \cap t_d$ ha misura lineare nulla.\\
 Inoltre vale il seguente lemma.
 
 \begin{lemma}
@@ -236,10 +236,11 @@ Sia $L$ un insieme aperto di rette, allora esiste un insieme di punti $A$ tale c
 \end{lemma}
 
 Per dimostrarlo, usiamo il seguente lemma, la cui dimostrazione è riportata nell'ultima sezione.\\
-Introduciamo anche la seguente notazione. Per un dato parallelogramma $P$ (aperto e non degenere) e un intervallo di direzioni $I$, sia $A_{P, I}$ l'insieme di rette per i punti di $P$ in direzioni appartenenti a $I$.
+Introduciamo anche la seguente notazione. Per un dato parallelogramma $P$, aperto e non degenere, e un intervallo di direzioni $I$, sia $A_{P, I}$ l'insieme di rette per i punti di $P$ in direzioni appartenenti a $I$.\\
+Inoltre, d'ora in poi, ogni parallelogramma nel piano si intende aperto, come anche ogni intervallo di direzioni di rette nel piano.
 
 \begin{lemma} \label{lemmabrutto}
-Per ogni parallelogramma $P$, numero positivo $\varepsilon$ e intervalli di direzioni $I, J$ tale che $\operatorname{cl}(I) \subseteq \operatorname{int}(J)$, esistono dei sotto parallelogrammi $P_{1}, P_{2}, \ldots$ tali che:
+Per ogni parallelogramma $P$, numero positivo $\varepsilon$ e intervalli di direzioni $I, J$ tale che $\operatorname{cl}(I) \subseteq J$, esistono dei sotto parallelogrammi $P_{1}, P_{2}, \ldots$ tali che:
 \begin{itemize}
 	\item ogni retta che interseca $P$ e la cui direzione appartiene a $I$ interseca anche uno dei parallelogrammi, cioè $\bigcup_{n} A_{P_{n}, I}=A_{P, I}$;
 	\item la proiezione di $\bigcup_{n} P_{n}$ ha misura di Lebesgue minore di $\varepsilon$ in ogni direzione non appartenente a $J$.
@@ -248,22 +249,23 @@ Per ogni parallelogramma $P$, numero positivo $\varepsilon$ e intervalli di dire
 
 \begin{proof}[Dimostrazione del lemma \ref{lemma2bello}]
 Per ogni successione finita di naturali $\mathbf{n}$, scegliamo $\varepsilon_{\mathbf{n}}$ positivo tale che, per ogni $k$ naturale positivo, $\sum_{\mathbf{n}=n_{1} n_{2} \cdots n_{k}} \varepsilon_{\mathbf{n}}<1 / 2^{k}$.\\
-Siano $P_{1}, P_{2}, \ldots$ parallelogrammi aperti e siano $I_{1}, I_{2}, \ldots$ intervalli aperti di direzioni, tali che $A_{P_{j}, I_{j}} \subseteq L$ per ogni $j$ e, per ogni retta $\ell \in L$, l'insieme $\left\{P_{j}: \ell \in A_{P_{j}, I_{j}}\right\}$ sia un ricoprimento di Vitali di $\ell$, cioè ogni punto di $\ell$ sia coperto da un parallelogramma arbitrariamente piccolo. In particolare data $\ell \in L$, $ \bigcup_j P_j \cap \ell = \ell $.\\
+Siano $P_{1}, P_{2}, \ldots$ parallelogrammi e siano $I_{1}, I_{2}, \ldots$ intervalli di direzioni, tali che $A_{P_{j}, I_{j}} \subseteq L$ per ogni $j$ e, per ogni retta $\ell \in L$, l'insieme $\left\{P_{j}: \ell \in A_{P_{j}, I_{j}}\right\}$ sia un ricoprimento di Vitali di $\ell$, cioè ogni punto di $\ell$ sia coperto da un parallelogramma di diametro arbitrariamente piccolo. In particolare data $\ell \in L$, $ \bigcup_j P_j \cap \ell = \ell $.\\
 L'esistenza di una configurazione di questo tipo è garantita perché $L$ è aperto. Infatti, supponiamo $\ell$ non verticale e sia $x_{\ell}$ il punto che rappresenta $\ell$ nel duale. Allora esiste un intorno di $x_{\ell}$ contenuto in $L$, i cui punti corrispondono a rette in un certo intervallo di direzioni e passanti per un fissato segmento verticale. Questo consente di scegliere opportunamente i $P_i$ per ricoprire ogni retta $\ell \in L$. La richiesta che il ricoprimento sia di Vitali è facilmente realizzabile.\\
 
-Partendo dai parallelogrammi $P_1, P_2,...$, vogliamo costruire induttivamente una collezione numerabile di parallelogrammi indicizzata dalle sequenze finite di naturali.\\
-Sia $\mathbf{n}=n_{1} n_{2} \cdots n_{k}$ una sequenza finita di naturali. Supponiamo che siano già stati definiti $P=P_{\mathbf{n}}$ e $I=I_{\mathbf{n}}$, allora definiamo $P_{\mathbf{n} j}, I_{\mathbf{n} j}$ per ogni $j \in \mathbb{N}$ positivo come segue.\\
+Vogliamo costruire induttivamente una collezione numerabile di parallelogrammi indicizzata dalle sequenze finite di naturali. Sempre induttivamente, a ogni parallelogramma $P_{\mathbf{n}}$ associo degli intervalli di direzioni $I_{\mathbf{n}}, J_{\mathbf{n}}$.\\
+I parallelogrammi $P_1, P_2,...$, indicizzati da sequenze finite di lunghezza 1, sono il passo base dell'induzione, con intervalli $I_1, I_2,...$ e con $J_1=J_2=...$ che contengono tutte le direzioni.\\
+Per il passo induttivo, sia $\mathbf{n}=n_{1} n_{2} \cdots n_{k}$ una sequenza finita di naturali di lugnhezza $k$. Supponiamo che siano già stati definiti $P=P_{\mathbf{n}}$, $I=I_{\mathbf{n}}$, $J=J_{\mathbf{n}}$, allora definiamo $P_{\mathbf{n} j}, I_{\mathbf{n} j}, J_{\mathbf{n} j}$ per ogni $j \in \mathbb{N}$ positivo come segue.\\
 
-Scegliamo dei sotto-parallelogrammi aperti $P^{1}, P^{2}, \ldots$ di $P=P_{\mathbf{n}}$ e dei sotto-intervalli aperti $I^{1}, I^{2}, \ldots$ di $I=I_{\mathrm{n}}$ con $\operatorname{cl}(I^j) \subseteq \operatorname{int}(I)$ tali che per ogni $\ell \in A_{P, I}$, l'insieme di sotto-parallelogrammi $\left\{P^{j}: \ell \in A_{P^{j}, I^{j}}\right\}$
+Scegliamo dei sotto-parallelogrammi $P^{1}, P^{2}, \ldots$ di $P=P_{\mathbf{n}}$ e dei sotto-intervalli $I^{1}, I^{2}, \ldots$ di $I=I_{\mathbf{n}}$ con $\operatorname{cl}(I^j) \subseteq I$ tali che per ogni $\ell \in A_{P, I}$, l'insieme di sotto-parallelogrammi $\left\{P^{j}: \ell \in A_{P^{j}, I^{j}}\right\}$
 sia un ricoprimento di Vitali del segmento $\ell \cap P$. \\
-Per ogni $j$ naturale positivo, scegliamo  $\varepsilon^{j} >0$ in modo che $\sum_j \e^j < \e_{\mathbf{n}}$ e un intervallo di direzioni $J^{j}$ tale che $\operatorname{cl}\left(I^{j}\right) \subseteq \operatorname{int}\left(J^{j}\right)$ e $\left|J^{j} \backslash I^{j}\right|<\varepsilon_\mathbf{n}$, dove intendiamo l'usuale misura di lunghezza sull'insieme delle direzioni.\\ 
+Per ogni $j$ naturale positivo, scegliamo  $\varepsilon^{j} >0$ in modo che $\sum_j \e^j < \e_{\mathbf{n}}$ e un intervallo di direzioni $J^{j} \subseteq I$ tale che $\operatorname{cl}\left(I^{j}\right) \subseteq J^{j}$ e $\left|J^{j} \backslash I^{j}\right|<\varepsilon_\mathbf{n}$, dove intendiamo l'usuale misura di lunghezza sull'insieme delle direzioni.\\ 
 Applichiamo il lemma \ref{lemmabrutto} a tutti i parallelogrammi $P^{j}$, con intervalli $I^{j}, J^{j}$ e numeri $\varepsilon^{j}$. Otteniamo un insieme numerabile di sotto-parallelogrammi di $P$, che chiameremo $P_{\mathbf{n} 1}, P_{\mathbf{n} 2}, \ldots$. Se il parallelogramma $P_{\mathbf{n} m}$ è ottenuto applicando il lemma \ref{lemmabrutto} a $P^{j}, I^{j}, J^{j}, \varepsilon^{j}$, allora poniamo $I_{\mathbf{n} m}=I^{j}$ e $J_{\mathbf{n} m}=J^{j}$.\\
 
-Ricordiamo che l'insieme $\left\{P^{j}: \ell \in A_{P^{j}, I^{j}}\right\}$ è un ricoprimento di Vitali di $\ell \cap P$ per ogni $\ell \in A_{P^, I}$. In particolare, dato un punto $x \in \ell \cap P$, allora $x \in P^j$ per un certo $j$ e la direzione di $\ell$ appartiene a $I_j$.\\
+Sia $\ell \in L$ e $P=P_{\mathbf{n}}$, ricordiamo che l'insieme $\left\{P^{j}: \ell \in A_{P^{j}, I^{j}}\right\}$ è un ricoprimento di Vitali di $\ell \cap P$ per ogni $\ell \in A_{P^, I}$. In particolare, dato un punto $x \in \ell \cap P$, allora $x \in P^j$ per un certo $j$ e la direzione di $\ell$ appartiene a $I_j$.\\
 Ma per il primo punto del lemma \ref{lemmabrutto}, se $\ell$ interseca $P^j$ e la sua direzione appartiene a $I_j$, allora interseca uno dei sotto-parallelogrammi ottenuti applicando il lemma a $P^{j}, I^{j}, J^{j}, \varepsilon^{j}$.\\
-Ricordando che il ricoprimento è di Vitali, preso $x \in \ell \cap P$, si può anche richiedere che $P^j$ come sopra abbia diametro piccolo a piacere.\\
+Ricordando che il ricoprimento è di Vitali, si può anche richiedere che $P^j$ come sopra abbia diametro piccolo a piacere.\\
 Quindi esiste un parallelogramma $P_{\mathbf{n}m}$, ottenuto da $P^j$, arbitrariamente vicino a $x$ e che interseca $\ell$. Quindi l'insieme $\left\{P_{\mathrm{n} m}: \ell \in A_{P_{\mathrm{n}m}, I_{\mathrm{n} m}}\right\}$
-copre un sottoinsieme aperto denso del segmento $\ell \cap P$. In particolare, $\bigcup_m P_{\mathbf{n}m} \cap \ell$ denso in $P_\mathbf{n} \cap \ell$.\\
+copre un sottoinsieme aperto denso del segmento $\ell \cap P$. In particolare, $\bigcup_m P_{\mathbf{n}m} \cap \ell$ è denso in $P_\mathbf{n} \cap \ell$.\\
 Ricordiamo che data $\ell \in L$ allora $ \bigcup_j P_j \cap \ell = \ell $, quindi $\bigcup_{\mathbf{n}=n_{1} n_{2} \cdots n_{k}} P_{\mathbf{n}}$ interseca ogni retta $\ell \in L$ in un insieme aperto denso.\\
 Per il terzo punto della proposizione \ref{prop}, l'insieme 
 $$
@@ -273,12 +275,12 @@ interseca ogni retta $\ell \in L$ in un insieme residuale, quindi soddisfa la pr
 Notiamo che $A$ è intersezione numerabile di aperti, quindi è boreliano.\\
 
 Mostriamo che anche la seconda condizione è soddisfatta.\\
-Se $\ell \notin L$, si hanno due possibilità: o $\ell$ non interseca $P_{\mathbf{n}}$ per ogni sequenza $\mathbf{n}$, oppure esiste $\mathbf{n}$ per cui la direzione di $\ell$ non appartiene a $I_{\mathbf{n}}$.\\
+Se $\ell \notin L$, si hanno due possibilità: o $\ell$ non interseca $P_{\mathbf{n}}$ per ogni sequenza $\mathbf{n}$, oppure esiste $P_\mathbf{n}$ intersecato da $\ell$.\\
 Nel primo caso, $\ell$ non interseca $A$.\\
-Nel secondo caso, posso supporre che la direzione $d$ di $\ell$ non appartenga neanche a $\operatorname{cl}(I_\mathbf{n})$: altrimenti basta prendere un parallelogramma $P_{\mathbf{n}m} \subseteq P_{\mathbf{n}}$ che interseca $\ell$ e, siccome $\operatorname{cl}(I_{\mathbf{n}m}) \subseteq \operatorname{int}(I_{\mathbf{n}})$, $d \not \in \operatorname{cl}(I_{\mathbf{n}m})$.\\
+Nel secondo caso, ricordiamo che $A_{P_\mathbf{n},I_\mathbf{n}} \subseteq L$, quindi la direzione $d$ di $\ell$ non appartiene a $I_{\mathbf{n}}$. Posso supporre che $d$ non appartenga neanche a $\operatorname{cl}(I_\mathbf{n})$: altrimenti basta prendere un parallelogramma $P_{\mathbf{n}m} \subseteq P_{\mathbf{n}}$ che interseca $\ell$ e, siccome $\operatorname{cl}(I_{\mathbf{n}m}) \subseteq I_{\mathbf{n}}$, $d \not \in \operatorname{cl}(I_{\mathbf{n}m})$.\\
 Quindi la distanza della direzione $d$ da $\operatorname{cl}(I_\mathbf{n})$ è maggiore di $\delta$ per un certo $\delta >0$.\\
 Ricordiamo che, $|J_{\mathbf{n}m} \setminus I_{\mathbf{n}m}| < \e_{\mathbf{n}}$ per ogni $m$ e che $\e_{\mathbf{n}} < 1/2^k$. Quindi, per $r$ abbastanza grande, $|J_{\mathbf{n} m_{1} \cdots m_{r}} \setminus I_{\mathbf{n} m_{1} \cdots m_{r}}| < \e_{\mathbf{n} m_{1} \cdots m_{r-1}} < 1/2^{k+r-1}<\delta$.\\
-Se $d \not \in I_{\mathbf{n}} $, allora $\ell \not \in \bigcup_{m_{1} m_{2} \cdots m_{r}} I_{\mathbf{n} m_{1} \cdots m_{r}} \subseteq I_{\mathbf{n}}$, quindi esiste un intero positivo positivo $r_0$ per cui la direzione di $\ell$ non appartiene a $\bigcup_{m_{1} m_{2} \cdots m_{r}} J_{\mathbf{n} m_{1} \cdots m_{r}}$ per ogni $r \geq r_0$.\\
+Se $d \not \in I_{\mathbf{n}} $, allora $d \not \in \bigcup_{m_{1} m_{2} \cdots m_{r}} I_{\mathbf{n} m_{1} \cdots m_{r}} \subseteq I_{\mathbf{n}}$, quindi esiste un intero positivo positivo $r_0$ per cui la direzione di $\ell$ non appartiene a $\bigcup_{m_{1} m_{2} \cdots m_{r}} J_{\mathbf{n} m_{1} \cdots m_{r}}$ per ogni $r \geq r_0$.\\
 Per tali valori di $r$, ricordando il secondo punto del lemma \ref{lemmabrutto} e la sommabilità degli $\e^j$ come sopra, si ha che la proiezione ortogonale di $\bigcup_{m_{1} m_{2} \cdots m_{r}} P_{\mathbf{n} m_{1} \cdots m_{r}}$ nella direzione di $\ell$ ha misura minore o uguale a $\sum_{m_{1} m_{2} \cdots m_{r-1}} \varepsilon_{\mathbf{n} m_{1} \cdots m_{r-1}}$.\\
 Tale somma per ipotesi è minore di $1/2^{k+r-1}$. Quindi la proiezione ortogonale di $\bigcap_{r} \bigcup_{m_{1} m_{2} \cdots m_{r}} P_{\mathbf{n} m_{1} \cdots m_{r}} $ lungo $\ell$ ha misura nulla.\\
 Consideriamo ora tutte le rette non in $L$, in una direzione fissata $d$, che intersecano $A$. Siano $P_{\mathbf{n}_1}, P_{\mathbf{n}_2},...$ i parallelogrammi che queste intersecano.\\
@@ -293,7 +295,7 @@ Nel tentativo di generalizzare il teorema per una misura boreliana $\sigma$-fini
 La dimostrazione di questo fatto richiede l'introduzione di alcuni concetti più generali nell'ambito della teoria della misura.
 
 \begin{defin}
-	Sia $X$ un insieme non vuoto e sia $\mathcal{E}$ una collezione di suoi sottoinsiemi. Diciamo che $\left\{A_{n_{1}, \ldots, n_{k}}\right\}$ è uno schema di Suslin a valori in $\mathcal{E}$ se per ogni sequenza finita di naturali $\left(n_{1}, \ldots, n_{k}\right)$, si ha $A_{n_{1}, \ldots, n_{k}} \in \mathcal{E}$.\\
+	Sia $X$ un insieme non vuoto e sia $\mathcal{E}$ una collezione di suoi sottoinsiemi. Diciamo che $\left\{A_{n_{1}, \ldots, n_{k}}\right\}$ è uno schema di Suslin a valori in $\mathcal{E}$ se, per ogni sequenza finita di naturali $\left(n_{1}, \ldots, n_{k}\right)$, si ha $A_{n_{1}, \ldots, n_{k}} \in \mathcal{E}$.\\
 	L'operazione di Suslin (o A-operazione) in $\mathcal{E}$ associa a ogni schema di Suslin $\left\{A_{n_{1}, \ldots, n_{k}}\right\}$ a valori in $\mathcal{E}$ l'insieme
 	$$
 	A=\bigcup_{\left(n_{i}\right) \in \mathbb{N}^{\infty}} \bigcap_{k=1}^{\infty} A_{n_{1}, \ldots, n_{k}} .
@@ -603,7 +605,12 @@ Inoltre la misura della proiezione dell'unione dei parallelogrammi dell'$n$-esim
 
 \newpage
 
-\printbibliography[heading=bibintoc]
+\section{Bibliografia}
 
+[1] \ \ Marianna Cs\"{o}rnyei, "How to make Davies' Theorem visible", 2001\\
+
+[2] \ \ Marianna Cs\"{o}rnyei, "On the visibility of invisible sets", 2000\\
+
+[3] \ \ V. I. Bogachev, "Measure Theory"
 
 \end{document}
