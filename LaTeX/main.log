@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630) (preloaded format=pdflatex 2018.6.14)  27 MAY 2022 10:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630) (preloaded format=pdflatex 2018.6.14)  3 JUN 2022 10:31
 entering extended mode
 **./main.tex
 (main.tex
@@ -1141,7 +1141,7 @@ se-latex2e.sty"
 Package: blx-case-latex2e 2022/02/02 v3.17 biblatex compatibility (PK/MW)
 ))
 \c@teo=\count391
-LaTeX Info: Redefining \bfseries on input line 56.
+LaTeX Info: Redefining \bfseries on input line 57.
 
 
 Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
@@ -1156,20 +1156,20 @@ LaTeX Warning: Unused global option(s):
 (main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Info: Redefining \it@ocap on input line 65.
-LaTeX Info: Redefining \it@ccap on input line 65.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Info: Redefining \it@ocap on input line 66.
+LaTeX Info: Redefining \it@ccap on input line 66.
 
 ("C:\Users\Chiara\AppData\Local\Programs\MiKTeX 2.9 a\tex\context\base\supp-pdf
 .mkii"
@@ -1266,8 +1266,8 @@ Package biblatex Info: Data encoding 'utf8' specified.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
  (main.bbl)
-Package biblatex Info: Reference section=0 on input line 65.
-Package biblatex Info: Reference segment=0 on input line 65.
+Package biblatex Info: Reference section=0 on input line 66.
+Package biblatex Info: Reference segment=0 on input line 66.
  (frontespizio.tex
 Package epstopdf Info: Source file: <cherubino_pant541.eps>
 (epstopdf)                    date: 2022-03-08 09:42:16
@@ -1382,44 +1382,44 @@ LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <15.59996> not available
 o_pant541-eps-converted-to.pdf>])
 
 LaTeX Font Warning: Font shape `T1/cmr/m/n' in size <18.72003> not available
-(Font)              size <17.28> substituted on input line 71.
+(Font)              size <17.28> substituted on input line 72.
 
 
 LaTeX Font Warning: Font shape `T1/cmr/bx/n' in size <18.72003> not available
-(Font)              size <17.28> substituted on input line 71.
+(Font)              size <17.28> substituted on input line 72.
 
-LaTeX Font Info:    Calculating math sizes for size <13> on input line 71.
+LaTeX Font Info:    Calculating math sizes for size <13> on input line 72.
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <13> not available
-(Font)              size <12> substituted on input line 71.
+(Font)              size <12> substituted on input line 72.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <6.5> not available
-(Font)              size <6> substituted on input line 71.
+(Font)              size <6> substituted on input line 72.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <13> not available
-(Font)              size <12> substituted on input line 71.
+(Font)              size <12> substituted on input line 72.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <6.5> not available
-(Font)              size <6> substituted on input line 71.
+(Font)              size <6> substituted on input line 72.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <13> not available
-(Font)              size <12> substituted on input line 71.
+(Font)              size <12> substituted on input line 72.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <6.5> not available
-(Font)              size <6> substituted on input line 71.
+(Font)              size <6> substituted on input line 72.
 
 
 LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <13> not available
-(Font)              size <12> substituted on input line 71.
+(Font)              size <12> substituted on input line 72.
 
 
 LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <6.5> not available
-(Font)              size <6> substituted on input line 71.
+(Font)              size <6> substituted on input line 72.
 
 (main.toc
 
@@ -1453,165 +1453,49 @@ LaTeX Font Warning: Font shape `OMS/cmsy/b/n' in size <6.5> not available
 
 
 LaTeX Font Warning: Font shape `T1/cmr/m/sl' in size <13> not available
-(Font)              size <12> substituted on input line 72.
+(Font)              size <12> substituted on input line 73.
 
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 76--83
+Underfull \hbox (badness 10000) in paragraph at lines 77--84
 
  []
 
 
-LaTeX Warning: Command \textellipsis invalid in math mode on input line 86.
+LaTeX Warning: Command \textellipsis invalid in math mode on input line 87.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 84--87
+Underfull \hbox (badness 10000) in paragraph at lines 85--88
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 88--90
+Underfull \hbox (badness 10000) in paragraph at lines 89--91
 
  []
 
 
 LaTeX Font Warning: Font shape `T1/cmr/m/it' in size <13> not available
-(Font)              size <12> substituted on input line 92.
+(Font)              size <12> substituted on input line 93.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 93--95
+Underfull \hbox (badness 10000) in paragraph at lines 94--96
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 96--97
+Underfull \hbox (badness 10000) in paragraph at lines 97--98
 
  []
 
 [3
 
-] [4]
-Underfull \hbox (badness 10000) in paragraph at lines 106--109
+]
+Underfull \hbox (badness 10000) in paragraph at lines 99--102
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 110--112
-
- []
-
-[5] [6]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 170.
-
-
-("C:\Users\Chiara\AppData\Local\Programs\MiKTeX 2.9 a\tex\latex\base\omscmr.fd"
-File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/it' in size <13> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 170.
-
-
-LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <13> not available
-(Font)              size <12> substituted on input line 170.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 189--192
-
- []
-
-[7]
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <13> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 196.
-
-
-LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <13> not available
-(Font)              size <12> substituted on input line 196.
-
-[8]
-Underfull \hbox (badness 10000) in paragraph at lines 251--254
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 255--258
-
- []
-
-[9]
-Underfull \hbox (badness 10000) in paragraph at lines 259--263
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 273--276
-
- []
-
-[10] [11]
-LaTeX Font Info:    Calculating math sizes for size <18.72003> on input line 29
-2.
-
-
-LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <18.72003> not available
-(Font)              size <17.28> substituted on input line 292.
-
-
-LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <13.10396> not available
-(Font)              size <12> substituted on input line 292.
-
-
-LaTeX Font Warning: Font shape `OML/cmm/b/it' in size <18.72003> not available
-(Font)              size <17.28> substituted on input line 292.
-
-
-LaTeX Font Warning: Font shape `OML/cmm/b/it' in size <13.10396> not available
-(Font)              size <12> substituted on input line 292.
-
-
-LaTeX Font Warning: Font shape `OMS/cmsy/b/n' in size <18.72003> not available
-(Font)              size <17.28> substituted on input line 292.
-
-
-LaTeX Font Warning: Font shape `OMS/cmsy/b/n' in size <13.10396> not available
-(Font)              size <12> substituted on input line 292.
-
-
-LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <18.72003> not available
-(Font)              size <17.28> substituted on input line 292.
-
-
-LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <13.10396> not available
-(Font)              size <12> substituted on input line 292.
-
-
-Overfull \hbox (11.57852pt too wide) in paragraph at lines 298--300
-\T1/cmr/m/it/12 L'operazione di Su-slin (o A-operazione) in $\OMS/cmsy/m/n/12 E
-$ \T1/cmr/m/it/12 as-so-cia a ogni sche-ma di Su-slin $[]$
- []
-
-
-LaTeX Font Warning: Font shape `T1/cmr/m/it' in size <6.5> not available
-(Font)              size <6> substituted on input line 317.
-
-[12]
-Underfull \hbox (badness 10000) in paragraph at lines 332--333
-
- []
-
-
-Overfull \hbox (2.0612pt too wide) in paragraph at lines 343--344
-[]\T1/cmr/m/n/12 Ovviamente $\OML/cmm/m/it/12 S\OT1/cmr/m/n/12 (\OMS/cmsy/m/n/1
-2 E\OT1/cmr/m/n/12 ) \OMS/cmsy/m/n/12  \OML/cmm/m/it/12 S\OT1/cmr/m/n/12 (\OML
-/cmm/m/it/12 S\OT1/cmr/m/n/12 (\OMS/cmsy/m/n/12 E\OT1/cmr/m/n/12 ))$\T1/cmr/m/n
-/12 . Per l'al-tra in-clu-sio-ne, sia-no $\OML/cmm/m/it/12 A[] \OMS/cmsy/m/n/12
- 2
- []
-
-
-LaTeX Font Warning: Font shape `T1/cmr/m/n' in size <6.5> not available
-(Font)              size <6> substituted on input line 344.
-
-[13]
-Overfull \hbox (0.5876pt too wide) in paragraph at lines 372--374
+Overfull \hbox (0.5876pt too wide) in paragraph at lines 106--108
 \T1/cmr/m/it/12 Un in-sie-me $\OML/cmm/m/it/12 A$ \T1/cmr/m/it/12 è $\OML/cmm/m
 /it/12  \OMS/cmsy/m/n/12   \OML/cmm/m/it/12 misurabile$ \T1/cmr/m/it/12 se per
  ogni $\OML/cmm/m/it/12 " > \OT1/cmr/m/n/12 0$ \T1/cmr/m/it/12 esi-ste $\OML/cm
@@ -1620,38 +1504,159 @@ m/m/it/12 A[] \OMS/cmsy/m/n/12 2 A$ \T1/cmr/m/it/12 ta-le che $\OML/cmm/m/it/12
 OT1/cmr/m/n/12 ) \OML/cmm/m/it/12 <
  []
 
-[14] [15]
-Underfull \hbox (badness 10000) in paragraph at lines 428--430
+
+LaTeX Font Warning: Font shape `T1/cmr/m/n' in size <6.5> not available
+(Font)              size <6> substituted on input line 123.
+
+[4]
+Underfull \hbox (badness 10000) in paragraph at lines 132--135
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 431--434
+Underfull \hbox (badness 10000) in paragraph at lines 136--138
 
  []
 
-[16]
-Underfull \hbox (badness 10000) in paragraph at lines 435--436
+[5] [6]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 196.
+
+
+("C:\Users\Chiara\AppData\Local\Programs\MiKTeX 2.9 a\tex\latex\base\omscmr.fd"
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/it' in size <13> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 196.
+
+
+LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <13> not available
+(Font)              size <12> substituted on input line 196.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 215--218
 
  []
 
-[17]
-Underfull \hbox (badness 10000) in paragraph at lines 484--489
+[7]
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <13> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 222.
+
+
+LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <13> not available
+(Font)              size <12> substituted on input line 222.
+
+[8]
+Underfull \hbox (badness 10000) in paragraph at lines 277--280
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 490--495
+Underfull \hbox (badness 10000) in paragraph at lines 281--284
+
+ []
+
+[9]
+Underfull \hbox (badness 10000) in paragraph at lines 285--289
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 299--302
+
+ []
+
+[10] [11]
+LaTeX Font Info:    Calculating math sizes for size <18.72003> on input line 31
+8.
+
+
+LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <18.72003> not available
+(Font)              size <17.28> substituted on input line 318.
+
+
+LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <13.10396> not available
+(Font)              size <12> substituted on input line 318.
+
+
+LaTeX Font Warning: Font shape `OML/cmm/b/it' in size <18.72003> not available
+(Font)              size <17.28> substituted on input line 318.
+
+
+LaTeX Font Warning: Font shape `OML/cmm/b/it' in size <13.10396> not available
+(Font)              size <12> substituted on input line 318.
+
+
+LaTeX Font Warning: Font shape `OMS/cmsy/b/n' in size <18.72003> not available
+(Font)              size <17.28> substituted on input line 318.
+
+
+LaTeX Font Warning: Font shape `OMS/cmsy/b/n' in size <13.10396> not available
+(Font)              size <12> substituted on input line 318.
+
+
+LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <18.72003> not available
+(Font)              size <17.28> substituted on input line 318.
+
+
+LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <13.10396> not available
+(Font)              size <12> substituted on input line 318.
+
+
+Overfull \hbox (11.57852pt too wide) in paragraph at lines 324--326
+\T1/cmr/m/it/12 L'operazione di Su-slin (o A-operazione) in $\OMS/cmsy/m/n/12 E
+$ \T1/cmr/m/it/12 as-so-cia a ogni sche-ma di Su-slin $[]$
+ []
+
+
+LaTeX Font Warning: Font shape `T1/cmr/m/it' in size <6.5> not available
+(Font)              size <6> substituted on input line 343.
+
+[12]
+Underfull \hbox (badness 10000) in paragraph at lines 358--359
+
+ []
+
+
+Overfull \hbox (2.0612pt too wide) in paragraph at lines 369--370
+[]\T1/cmr/m/n/12 Ovviamente $\OML/cmm/m/it/12 S\OT1/cmr/m/n/12 (\OMS/cmsy/m/n/1
+2 E\OT1/cmr/m/n/12 ) \OMS/cmsy/m/n/12  \OML/cmm/m/it/12 S\OT1/cmr/m/n/12 (\OML
+/cmm/m/it/12 S\OT1/cmr/m/n/12 (\OMS/cmsy/m/n/12 E\OT1/cmr/m/n/12 ))$\T1/cmr/m/n
+/12 . Per l'al-tra in-clu-sio-ne, sia-no $\OML/cmm/m/it/12 A[] \OMS/cmsy/m/n/12
+ 2
+ []
+
+[13] [14] [15]
+Underfull \hbox (badness 10000) in paragraph at lines 450--452
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 453--456
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 457--458
+
+ []
+
+[16] [17]
+Underfull \hbox (badness 10000) in paragraph at lines 501--506
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 507--512
 
  []
 
 [18]
-Underfull \hbox (badness 10000) in paragraph at lines 497--499
+Underfull \hbox (badness 10000) in paragraph at lines 514--516
 
  []
 
 
-Overfull \hbox (11.19423pt too wide) in paragraph at lines 501--506
+Overfull \hbox (11.19423pt too wide) in paragraph at lines 518--523
 \T1/cmr/m/n/12 Inoltre per ogni $\OML/cmm/m/it/12 n$\T1/cmr/m/n/12 , $\OML/cmm/
 m/it/12 \OT1/cmr/m/n/12 (\OML/cmm/m/it/12 B\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x
 []; r[]\OT1/cmr/m/n/12 )) = \OML/cmm/m/it/12 \OT1/cmr/m/n/12 (\OML/cmm/m/it/12
@@ -1661,12 +1666,21 @@ OT1/cmr/m/n/12 (([][] \OML/cmm/m/it/12 L[]\OT1/cmr/m/n/12 )[]) =
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 501--506
+Underfull \hbox (badness 10000) in paragraph at lines 518--523
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 513--516
+Overfull \hbox (16.7693pt too wide) in paragraph at lines 530--533
+[]\T1/cmr/m/n/12 Per bre-vi-tà, as-su-mia-mo che $\OML/cmm/m/it/12 A \OT1/cmr/m
+/n/12 = \OML/cmm/m/it/12 B\OT1/cmr/m/n/12 (0\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 
+1)\OMS/cmsy/m/n/12 nf\OT1/cmr/m/n/12 0\OMS/cmsy/m/n/12 g$ \T1/cmr/m/n/12 e $\OM
+L/cmm/m/it/12 B\OT1/cmr/m/n/12 (0\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 2) \OMS/cms
+y/m/n/12 \
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 530--533
 
  []
 
@@ -1674,45 +1688,55 @@ Underfull \hbox (badness 10000) in paragraph at lines 513--516
 <passo1grigio.png, id=96, 1028.34187pt x 659.46375pt>
 File: passo1grigio.png Graphic file (type png)
 <use passo1grigio.png>
-Package pdftex.def Info: passo1grigio.png  used on input line 548.
+Package pdftex.def Info: passo1grigio.png  used on input line 565.
 (pdftex.def)             Requested size: 256.0806pt x 142.26494pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 554--555
+Underfull \hbox (badness 10000) in paragraph at lines 571--572
 
  []
 
 <passi123grigio.png, id=98, 1159.33125pt x 590.205pt>
 File: passi123grigio.png Graphic file (type png)
 <use passi123grigio.png>
-Package pdftex.def Info: passi123grigio.png  used on input line 557.
+Package pdftex.def Info: passi123grigio.png  used on input line 574.
 (pdftex.def)             Requested size: 256.062pt x 142.25548pt.
 [21 <./passo1grigio.png> <./passi123grigio.png>]
 <direzioni.png, id=104, 512.41437pt x 394.97563pt>
 File: direzioni.png Graphic file (type png)
 <use direzioni.png>
-Package pdftex.def Info: direzioni.png  used on input line 567.
+Package pdftex.def Info: direzioni.png  used on input line 584.
 (pdftex.def)             Requested size: 256.07741pt x 197.38486pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 572--576
+Underfull \hbox (badness 10000) in paragraph at lines 590--593
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 577--579
+Underfull \hbox (badness 10000) in paragraph at lines 594--596
 
  []
 
-[22 <./direzioni.png>] [23]
-Underfull \hbox (badness 10000) in paragraph at lines 610--611
+[22 <./direzioni.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 614--618
+
+ []
+
+<disegno.png, id=109, 575.90157pt x 340.27126pt>
+File: disegno.png Graphic file (type png)
+<use disegno.png>
+Package pdftex.def Info: disegno.png  used on input line 620.
+(pdftex.def)             Requested size: 256.07741pt x 151.3086pt.
+[23 <./disegno.png>] [24]
+Underfull \hbox (badness 10000) in paragraph at lines 636--637
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 612--613
+Underfull \hbox (badness 10000) in paragraph at lines 638--639
 
  []
 
-[24] (main.aux)
+[25] (main.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.72395pt have occurred.
@@ -1722,10 +1746,10 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 23688 strings out of 493305
- 429168 string characters out of 3128503
- 704173 words of memory out of 3000000
- 26978 multiletter control sequences out of 15000+200000
+ 23693 strings out of 493305
+ 429242 string characters out of 3128503
+ 704179 words of memory out of 3000000
+ 26982 multiletter control sequences out of 15000+200000
  562694 words of font info for 116 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  47i,10n,73p,1820b,1303s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1760,9 +1784,9 @@ a/Local/Programs/MiKTeX 2.9 a/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users
 amsfonts/cm/cmsy6.pfb><C:/Users/Chiara/AppData/Local/Programs/MiKTeX 2.9 a/font
 s/type1/public/amsfonts/cm/cmsy9.pfb><C:/Users/Chiara/AppData/Local/Programs/Mi
 KTeX 2.9 a/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (24 pages, 722750 bytes).
+Output written on main.pdf (25 pages, 777289 bytes).
 PDF statistics:
- 517 PDF objects out of 1000 (max. 8388607)
+ 523 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 21 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 26 words of extra memory for PDF output out of 10000 (max. 10000000)
 
