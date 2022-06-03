@@ -301,11 +301,10 @@ interseca ogni retta $\ell \in L$ in un insieme residuale, quindi soddisfa la pr
 Notiamo che $A$ è intersezione numerabile di aperti, quindi è boreliano.\\
 
 Mostriamo che anche la seconda condizione è soddisfatta.\\
-Se $\ell \notin L$, si hanno due possibilità: o $\ell$ non interseca $P_{\mathbf{n}}$ per ogni sequenza $\mathbf{n}$, oppure esiste $P_\mathbf{n}$ intersecato da $\ell$.\\
-Nel primo caso, $\ell$ non interseca $A$.\\
+Se $\ell \notin L$, o $\ell$ non interseca $P_{\mathbf{n}}$ per ogni sequenza $\mathbf{n}$, oppure esiste $P_\mathbf{n}$ intersecato da $\ell$. Nel primo caso, $\ell$ non interseca $A$.\\
 Nel secondo caso, ricordiamo che $A_{P_\mathbf{n},I_\mathbf{n}} \subseteq L$, quindi la direzione $d$ di $\ell$ non appartiene a $I_{\mathbf{n}}$. Posso supporre che $d$ non appartenga neanche a $\operatorname{cl}(I_\mathbf{n})$: altrimenti basta prendere un parallelogramma $P_{\mathbf{n}m} \subseteq P_{\mathbf{n}}$ che interseca $\ell$ e, siccome $\operatorname{cl}(I_{\mathbf{n}m}) \subseteq I_{\mathbf{n}}$, $d \not \in \operatorname{cl}(I_{\mathbf{n}m})$.\\
 Quindi la distanza della direzione $d$ da $\operatorname{cl}(I_\mathbf{n})$ è maggiore di $\delta$ per un certo $\delta >0$.\\
-Ricordiamo che, $|J_{\mathbf{n}m} \setminus I_{\mathbf{n}m}| < \e_{\mathbf{n}}$ per ogni $m$ e che $\e_{\mathbf{n}} < 1/2^k$. Quindi, per $r$ abbastanza grande, $|J_{\mathbf{n} m_{1} \cdots m_{r}} \setminus I_{\mathbf{n} m_{1} \cdots m_{r}}| < \e_{\mathbf{n} m_{1} \cdots m_{r-1}} < 1/2^{k+r-1}<\delta$.\\
+Ricordiamo che $|J_{\mathbf{n}m} \setminus I_{\mathbf{n}m}| < \e_{\mathbf{n}}$ per ogni $m$ e che $\e_{\mathbf{n}} < 1/2^k$. Quindi, per $r$ abbastanza grande, $|J_{\mathbf{n} m_{1} \cdots m_{r}} \setminus I_{\mathbf{n} m_{1} \cdots m_{r}}| < \e_{\mathbf{n} m_{1} \cdots m_{r-1}} < 1/2^{k+r-1}<\delta$.\\
 Se $d \not \in I_{\mathbf{n}} $, allora $d \not \in \bigcup_{m_{1} m_{2} \cdots m_{r}} I_{\mathbf{n} m_{1} \cdots m_{r}} \subseteq I_{\mathbf{n}}$, quindi esiste un naturale $r_0 >0$ per cui la direzione di $\ell$ non appartiene a $\bigcup_{m_{1} m_{2} \cdots m_{r}} J_{\mathbf{n} m_{1} \cdots m_{r}}$ per ogni $r \geq r_0$.\\
 Per tali valori di $r$, ricordando il secondo punto del lemma \ref{lemmabrutto} e la sommabilità degli $\e^j$ come sopra, si ha che la proiezione ortogonale di $\bigcup_{m_{1} m_{2} \cdots m_{r}} P_{\mathbf{n} m_{1} \cdots m_{r}}$ nella direzione di $\ell$ ha misura minore o uguale a $\sum_{m_{1} m_{2} \cdots m_{r-1}} \varepsilon_{\mathbf{n} m_{1} \cdots m_{r-1}}$.\\
 Tale somma per ipotesi è minore di $1/2^{k+r-1}$. Quindi la proiezione ortogonale di $\bigcap_{r} \bigcup_{m_{1} m_{2} \cdots m_{r}} P_{\mathbf{n} m_{1} \cdots m_{r}} $ lungo $\ell$ ha misura nulla.\\
@@ -370,7 +369,7 @@ Ora usiamo il precedente lemma per mostrare alcune proprietà generali degli ins
 	$$ A_{n_{1}, \ldots, n_{k}}=\bigcup_{(\nu_j) \in \mathbb{N}^{\infty}} \bigcap_{m=1}^{\infty} A_{n_{1}, \ldots, n_{k}}^{\nu_{1}, \ldots, \nu_{m}} \text {. }	$$
 	$$	A=\bigcup_{\left(n_{i}\right) \in \mathbb{N}^{\infty}} \bigcap_{k=1}^{\infty} A_{n_{1}, \ldots, n_{k}} \in S(S(\mathcal{E}))$$
 	
-	Con la stessa notazione di cui sopra, siano $\eta_{1}, \ldots, \eta_{l}$ naturali fissati. Per suriettività di $\Psi$, esistono $\sigma \in \mathbb{N}^{\infty}$ e $\tau=\left(\tau^{m}\right) \in\left(\mathbb{N}^{\infty}\right)^{\infty}$ tali che $\eta_{1}=\Psi(\sigma, \tau)_{1}, \ldots, \eta_{l}=$ $\Psi(\sigma, \tau)_{l}$. Anche se $\sigma$ e $\tau$ non sono univocamente determinate, per il lemma precedente, le collezioni $\sigma_{1}, \ldots, \sigma_{\varphi(l)}$ e $\tau_{1}^{\varphi(l)}, \ldots, \tau_{\psi(l)}^{\varphi(l)}$ lo sono. Ha senso quindi porre
+	Con la stessa notazione usata sopra, siano $\eta_{1}, \ldots, \eta_{l}$ naturali fissati. Per suriettività di $\Psi$, esistono $\sigma \in \mathbb{N}^{\infty}$ e $\tau=\left(\tau^{m}\right) \in\left(\mathbb{N}^{\infty}\right)^{\infty}$ tali che $\eta_{1}=\Psi(\sigma, \tau)_{1}, \ldots, \eta_{l}=$ $\Psi(\sigma, \tau)_{l}$. Anche se $\sigma$ e $\tau$ non sono univocamente determinate, per il lemma precedente, le collezioni $\sigma_{1}, \ldots, \sigma_{\varphi(l)}$ e $\tau_{1}^{\varphi(l)}, \ldots, \tau_{\psi(l)}^{\varphi(l)}$ lo sono. Ha senso quindi porre
 	$$
 	B\left(\eta_{1}, \ldots, \eta_{l}\right)=A_{\sigma_{1}, \ldots, \sigma_{\varphi(l)}}^{\tau_{1}^{\varphi(l)}, \ldots, \tau_{\psi(l)}^{\varphi(l)}} \in \mathcal{E} .
 	$$
@@ -386,11 +385,11 @@ Ora usiamo il precedente lemma per mostrare alcune proprietà generali degli ins
 	Per concludere che $S(\mathcal{E})$ è chiuso per intersezioni e unioni numerabili, consideriamo degli insiemi $B_1, B_2...$ in $S(\mathcal{E})$.\\
 	Allora ponendo $A_{n_1,...,n_k}=B_{n_1}$ se $n_1=...=n_k$ e vuoto altrimenti, l'operazione di Suslin dà l'unione numerabile dei $B_n$.\\
 	Similmente, ponendo $A_{1,2,3,...,k}=B_{k}$ e vuoto altrimenti,  l'operazione di Suslin dà l'intersezione numerabile dei $B_n$.\\
-	(ii) Sia
+	-Per mostrare il secondo enunciato, sia
 	$$
 	\mathcal{F}=\{B \in S(\mathcal{E}): \quad X \backslash B \in S(\mathcal{E})\} .
 	$$
-	Mostriamo che $\mathcal{F}$ è una $\sigma$-algebra. Per costruzione, $\mathcal{F}$ è chiusa per complementare. Siano $B_{n} \in \mathcal{F}$, allora $\bigcap_{n=1}^{\infty} B_{n} \in S(\mathcal{E})$ per l'enunciato (i). Similmente, $X \backslash \bigcap_{n=1}^{\infty} B_{n}=\bigcup_{n=1}^{\infty}\left(X \backslash B_{n}\right) \in S(\mathcal{E})$, da cui $\mathcal{F}$ chiusa per intersezione. Inoltre per l'ipotesi, $\varnothing \in \mathcal{F}$. Quindi $\mathcal{F}$ è una $\sigma$-algebra. Per ipotesi $\mathcal{E} \subseteq \mathcal{F}$, da cui $\sigma(\mathcal{E}) \subseteq \mathcal{F} \subseteq S(\mathcal{E})$.\\
+	Mostriamo che $\mathcal{F}$ è una $\sigma$-algebra. Per costruzione, $\mathcal{F}$ è chiusa per complementare. Siano $B_{n} \in \mathcal{F}$, allora $\bigcap_{n=1}^{\infty} B_{n} \in S(\mathcal{E})$ per il primo enunciato. Similmente, $X \backslash \bigcap_{n=1}^{\infty} B_{n}=\bigcup_{n=1}^{\infty}\left(X \backslash B_{n}\right) \in S(\mathcal{E})$, da cui $\mathcal{F}$ chiusa per intersezione. Inoltre per l'ipotesi, $\varnothing \in \mathcal{F}$. Quindi $\mathcal{F}$ è una $\sigma$-algebra. Per ipotesi $\mathcal{E} \subseteq \mathcal{F}$, da cui $\sigma(\mathcal{E}) \subseteq \mathcal{F} \subseteq S(\mathcal{E})$.\\
 \end{proof}
 
 
@@ -424,7 +423,7 @@ Ora usiamo il precedente lemma per mostrare alcune proprietà generali degli ins
 	Mostriamo infine che $E \subseteq A$. Sia $x \in E$, cioé per ogni $k$ si ha $x \in D_{m_{1}, \ldots, m_{k}}$. Quindi $x \in E_{n_{1}, \ldots, n_{k}}$ per una collezione $n_{1}, \ldots, n_{k}$ tale che $n_{1} \leq m_{1}, \ldots, n_{k} \leq m_{k}$.\\
 	Chiameremo queste collezioni ammissibili e costruiremo una successione infinita $n_{1}, n_{2}, \ldots$ con intervalli iniziali $n_{1}, \ldots, n_{k}$ ammissibili.	In tal caso, si avrà $x \in \bigcap_{k=1}^{\infty} E_{n_{1}, \ldots, n_{k}} \subseteq A$.\\
 	Per costruirla, osserviamo che, per ogni $k>1$, abbiamo collezioni ammissibili di $k$ numeri. Diciamo che una collezione $n_{1}, \ldots, n_{k}$ è estendibile se, per ogni $l \geq k$, esiste una collezione ammissibile $p_{1}, \ldots, p_{l}$ tale che $p_1=n_1,...,p_k=n_k$.\\
-	Osserviamo che ogni intervallo iniziale $n_{1}, \ldots, n_{k}$ in una collezione ammissibile prova $n_{1}, \ldots, n_{k}, \ldots, n_{l}$ è ammissibile per monotonia (cioé $E_{n_{1}, \ldots, n_{l}} \subseteq E_{n_{1}, \ldots, n_{k}}$).\\
+	Osserviamo che ogni intervallo iniziale $n_{1}, \ldots, n_{k}$ in una collezione ammissibile $n_{1}, \ldots, n_{k}, \ldots, n_{l}$ è ammissibile per monotonia (cioé $E_{n_{1}, \ldots, n_{l}} \subseteq E_{n_{1}, \ldots, n_{k}}$).\\
 	Concludiamo che esiste almeno una collezione estendibile di lunghezza $1$. Infatti, supponendo il contrario, si ha che per ogni $n \leq m_{1}$ esiste una lunghezza massima $l(n)$ delle collezioni ammissibili con il numero $n$ in prima posizione. Infatti per un certo $n$ se tale massimo non esistesse, per l'osservazione precedente, la collezione $n$ sarebbe estendibile. Ora, i finiti valori di $l(n)$, sono uniformemente limitati, da cui le collezioni ammissibili hanno lunghezza limitata, che è assurdo.\\
 	Con lo stesso procedimento, la collezione estendibile $n_{1}$ è contenuta in un'altra $n_{1}, n_{2}$ estendibile. Induttivamente si ottiene una successione che per costruzione soddisfa la tesi.\\
 	Infine, come conseguenza del secondo enunciato, dato $A \in S(\mathcal{E})$, siano $E_1, E_2 ,... \in \mathcal{E} \subseteq \mathcal{M} $ crescenti e contenuti in $A$ per cui $\mu(E_n) \ra \mu^*(A)$. Sia inoltre $B \in \mathcal{M}$ contenente $A$ con $\mu(B)=\mu^*(A)$.\\
@@ -448,7 +447,7 @@ $$L^*=\bigcup_{{\bf n}\in{\bf N}^\infty}\biggl(\bigcap_{k=1}^\infty K_{n_1,\ldot
 
 Mostriamo che tale mappa commuta anche con intersezioni decrescenti di compatti, cioè
 $$\biggl(\bigcap_{k=1}^\infty K_{n_1,\ldots,n_k}\biggr)^*=\bigcap_{k=1}^\infty K^*_{n_1,\ldots,n_k}\leqno $$
-L'inclusione $\subseteq$ è sempre vera. Viceversa, sia $x$ per cui esistono rette ${\ell_k}$ per cui $x\in \ell_k\in K^*_{n_1,\ldots,n_k}$ per ogni $k$. Per compattezza esiste una retta $\ell$, limite di una sottosuccessione delle $\ell_k$ che per monotonia deve appartenere a tutti i $K^*_{n_1,\ldots,n_k}$. Inoltre $\ell$ contiene ancora $x$.\\
+L'inclusione $\subseteq$ è sempre vera. Viceversa, sia $x$ per cui esistono rette ${\ell_k}$ per cui $x\in \ell_k\in K^*_{n_1,\ldots,n_k}$ per ogni $k$. Per compattezza esiste una retta $\ell$, limite di una sottosuccessione delle $\ell_k$, che per monotonia deve appartenere a tutti i $K^*_{n_1,\ldots,n_k}$. Inoltre $\ell$ contiene ancora $x$.\\
 
 Se mostriamo che i $K^*_{n_1,\ldots,n_k}$ sono analitici, poiché l'operazione di Suslin mantiene l'analiticità, anche $L^*$ analitico. Applicando il teorema \ref{misurab}, segue la misurabilità di $L^*$ rispetto a $\mu$.\\
 Siccome $L$ insieme di rette affini e lo schema di Suslin è monotono, posso supporre che ogni $K_{n_1,...,n_k}$ non contenga la retta all'infinito.\\
@@ -613,7 +612,7 @@ Inoltre la misura della proiezione dell'unione dei parallelogrammi dell'$n$-esim
 	\end{itemize}	
 	Infatti, consideriamo numerabili rette $r_1, r_2, ...$ in direzione $b$ che coprono un sottoinsieme denso di $T$. Si ispessisce ogni retta $r_n$ di $\e/2^{n+1}$, ottenendo degli aperti $A_n$.\\
 	Posso supporre che ogni $A_n$ non intersechi le rette $r$ e $r'$, definite come in figura 4. Infatti, escludendo gli $A_n$ che intersecano tali rette e ricordando che $\sum _{n=1}^\infty\e/2^{n+1}= \e/2 <\infty$, gli $A_n$ restanti coprono ancora un denso di $T$.\\
-	Consideriamo la collezione $\{A_n | $non esiste $m$ per cui $A_n \subseteq A_m\}$, che ancora copre un denso di $T$. Utilizzando nuovamente la sommabilità di sopra, a meno di ridurre lo spessore di ogni $A_n$, posso supporre che siano disgiunti. Gli aperti numerabili così ottenuti, detti $B_1, B_2, ...$ coprono un denso di $T$, sono disgiunti e non intersecano $r$ e $r'$. Da ogni $B_n$ si ottiene un parallelogramma contenuto in $T$, con almeno due vertici sui lati di $T$, come mostrato in figura.\\
+	Consideriamo la collezione $\{A_n | $non esiste $m$ per cui $A_n \subseteq A_m\}$, che ancora copre un denso di $T$. Utilizzando nuovamente la sommabilità di sopra, a meno di ridurre lo spessore di ogni $A_n$, posso supporre che siano disgiunti. Gli aperti numerabili così ottenuti coprono un denso di $T$, sono disgiunti e non intersecano $r$ e $r'$. Da ogni aperto si ottiene un parallelogramma $P_i$ contenuto in $T$, con almeno due vertici sui lati di $T$, come mostrato nella figura 4.\\
 	Si verifica che la collezione così ottenuta soddisfa le condizioni richieste.\\
 	
 \begin{figure} [h!]

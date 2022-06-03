@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630) (preloaded format=pdflatex 2018.6.14)  3 JUN 2022 10:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630) (preloaded format=pdflatex 2018.6.14)  3 JUN 2022 12:02
 entering extended mode
 **./main.tex
 (main.tex
@@ -1567,57 +1567,57 @@ Underfull \hbox (badness 10000) in paragraph at lines 299--302
 
 [10] [11]
 LaTeX Font Info:    Calculating math sizes for size <18.72003> on input line 31
-8.
+7.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <18.72003> not available
-(Font)              size <17.28> substituted on input line 318.
+(Font)              size <17.28> substituted on input line 317.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <13.10396> not available
-(Font)              size <12> substituted on input line 318.
+(Font)              size <12> substituted on input line 317.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/b/it' in size <18.72003> not available
-(Font)              size <17.28> substituted on input line 318.
+(Font)              size <17.28> substituted on input line 317.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/b/it' in size <13.10396> not available
-(Font)              size <12> substituted on input line 318.
+(Font)              size <12> substituted on input line 317.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/b/n' in size <18.72003> not available
-(Font)              size <17.28> substituted on input line 318.
+(Font)              size <17.28> substituted on input line 317.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/b/n' in size <13.10396> not available
-(Font)              size <12> substituted on input line 318.
+(Font)              size <12> substituted on input line 317.
 
 
 LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <18.72003> not available
-(Font)              size <17.28> substituted on input line 318.
+(Font)              size <17.28> substituted on input line 317.
 
 
 LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <13.10396> not available
-(Font)              size <12> substituted on input line 318.
+(Font)              size <12> substituted on input line 317.
 
 
-Overfull \hbox (11.57852pt too wide) in paragraph at lines 324--326
+Overfull \hbox (11.57852pt too wide) in paragraph at lines 323--325
 \T1/cmr/m/it/12 L'operazione di Su-slin (o A-operazione) in $\OMS/cmsy/m/n/12 E
 $ \T1/cmr/m/it/12 as-so-cia a ogni sche-ma di Su-slin $[]$
  []
 
 
 LaTeX Font Warning: Font shape `T1/cmr/m/it' in size <6.5> not available
-(Font)              size <6> substituted on input line 343.
+(Font)              size <6> substituted on input line 342.
 
 [12]
-Underfull \hbox (badness 10000) in paragraph at lines 358--359
+Underfull \hbox (badness 10000) in paragraph at lines 357--358
 
  []
 
 
-Overfull \hbox (2.0612pt too wide) in paragraph at lines 369--370
+Overfull \hbox (2.0612pt too wide) in paragraph at lines 368--369
 []\T1/cmr/m/n/12 Ovviamente $\OML/cmm/m/it/12 S\OT1/cmr/m/n/12 (\OMS/cmsy/m/n/1
 2 E\OT1/cmr/m/n/12 ) \OMS/cmsy/m/n/12  \OML/cmm/m/it/12 S\OT1/cmr/m/n/12 (\OML
 /cmm/m/it/12 S\OT1/cmr/m/n/12 (\OMS/cmsy/m/n/12 E\OT1/cmr/m/n/12 ))$\T1/cmr/m/n
@@ -1625,38 +1625,45 @@ Overfull \hbox (2.0612pt too wide) in paragraph at lines 369--370
  2
  []
 
-[13] [14] [15]
-Underfull \hbox (badness 10000) in paragraph at lines 450--452
+[13] [14]
+Overfull \hbox (56.24515pt too wide) in paragraph at lines 421--432
+\T1/cmr/m/n/12 Osserviamo che ogni in-ter-val-lo ini-zia-le $\OML/cmm/m/it/12 n
+[]; [] ; n[]$ \T1/cmr/m/n/12 in una col-le-zio-ne am-mis-si-bi-le $\OML/cmm/m/i
+t/12 n[]; [] ; n[]; [] ; n[]$
+ []
+
+[15]
+Underfull \hbox (badness 10000) in paragraph at lines 449--451
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 453--456
+Underfull \hbox (badness 10000) in paragraph at lines 452--455
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 457--458
+Underfull \hbox (badness 10000) in paragraph at lines 456--457
 
  []
 
 [16] [17]
-Underfull \hbox (badness 10000) in paragraph at lines 501--506
+Underfull \hbox (badness 10000) in paragraph at lines 500--505
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--512
+Underfull \hbox (badness 10000) in paragraph at lines 506--511
 
  []
 
 [18]
-Underfull \hbox (badness 10000) in paragraph at lines 514--516
+Underfull \hbox (badness 10000) in paragraph at lines 513--515
 
  []
 
 
-Overfull \hbox (11.19423pt too wide) in paragraph at lines 518--523
+Overfull \hbox (11.19423pt too wide) in paragraph at lines 517--522
 \T1/cmr/m/n/12 Inoltre per ogni $\OML/cmm/m/it/12 n$\T1/cmr/m/n/12 , $\OML/cmm/
 m/it/12 \OT1/cmr/m/n/12 (\OML/cmm/m/it/12 B\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x
 []; r[]\OT1/cmr/m/n/12 )) = \OML/cmm/m/it/12 \OT1/cmr/m/n/12 (\OML/cmm/m/it/12
@@ -1666,12 +1673,12 @@ OT1/cmr/m/n/12 (([][] \OML/cmm/m/it/12 L[]\OT1/cmr/m/n/12 )[]) =
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 518--523
+Underfull \hbox (badness 10000) in paragraph at lines 517--522
 
  []
 
 
-Overfull \hbox (16.7693pt too wide) in paragraph at lines 530--533
+Overfull \hbox (16.7693pt too wide) in paragraph at lines 529--532
 []\T1/cmr/m/n/12 Per bre-vi-tà, as-su-mia-mo che $\OML/cmm/m/it/12 A \OT1/cmr/m
 /n/12 = \OML/cmm/m/it/12 B\OT1/cmr/m/n/12 (0\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 
 1)\OMS/cmsy/m/n/12 nf\OT1/cmr/m/n/12 0\OMS/cmsy/m/n/12 g$ \T1/cmr/m/n/12 e $\OM
@@ -1680,7 +1687,7 @@ y/m/n/12 \
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 530--533
+Underfull \hbox (badness 10000) in paragraph at lines 529--532
 
  []
 
@@ -1688,51 +1695,51 @@ Underfull \hbox (badness 10000) in paragraph at lines 530--533
 <passo1grigio.png, id=96, 1028.34187pt x 659.46375pt>
 File: passo1grigio.png Graphic file (type png)
 <use passo1grigio.png>
-Package pdftex.def Info: passo1grigio.png  used on input line 565.
+Package pdftex.def Info: passo1grigio.png  used on input line 564.
 (pdftex.def)             Requested size: 256.0806pt x 142.26494pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 571--572
+Underfull \hbox (badness 10000) in paragraph at lines 570--571
 
  []
 
 <passi123grigio.png, id=98, 1159.33125pt x 590.205pt>
 File: passi123grigio.png Graphic file (type png)
 <use passi123grigio.png>
-Package pdftex.def Info: passi123grigio.png  used on input line 574.
+Package pdftex.def Info: passi123grigio.png  used on input line 573.
 (pdftex.def)             Requested size: 256.062pt x 142.25548pt.
 [21 <./passo1grigio.png> <./passi123grigio.png>]
 <direzioni.png, id=104, 512.41437pt x 394.97563pt>
 File: direzioni.png Graphic file (type png)
 <use direzioni.png>
-Package pdftex.def Info: direzioni.png  used on input line 584.
+Package pdftex.def Info: direzioni.png  used on input line 583.
 (pdftex.def)             Requested size: 256.07741pt x 197.38486pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 590--593
+Underfull \hbox (badness 10000) in paragraph at lines 589--592
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 594--596
+Underfull \hbox (badness 10000) in paragraph at lines 593--595
 
  []
 
 [22 <./direzioni.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 614--618
+Underfull \hbox (badness 10000) in paragraph at lines 613--617
 
  []
 
 <disegno.png, id=109, 575.90157pt x 340.27126pt>
 File: disegno.png Graphic file (type png)
 <use disegno.png>
-Package pdftex.def Info: disegno.png  used on input line 620.
+Package pdftex.def Info: disegno.png  used on input line 619.
 (pdftex.def)             Requested size: 256.07741pt x 151.3086pt.
 [23 <./disegno.png>] [24]
-Underfull \hbox (badness 10000) in paragraph at lines 636--637
+Underfull \hbox (badness 10000) in paragraph at lines 635--636
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 638--639
+Underfull \hbox (badness 10000) in paragraph at lines 637--638
 
  []
 
@@ -1784,7 +1791,7 @@ a/Local/Programs/MiKTeX 2.9 a/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users
 amsfonts/cm/cmsy6.pfb><C:/Users/Chiara/AppData/Local/Programs/MiKTeX 2.9 a/font
 s/type1/public/amsfonts/cm/cmsy9.pfb><C:/Users/Chiara/AppData/Local/Programs/Mi
 KTeX 2.9 a/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (25 pages, 777289 bytes).
+Output written on main.pdf (25 pages, 777303 bytes).
 PDF statistics:
  523 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
