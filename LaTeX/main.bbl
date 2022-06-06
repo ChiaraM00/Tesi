@@ -54,5 +54,24 @@
     \field{title}{On the visibility of invisible sets}
     \field{year}{2000}
   \endentry
+
+  \entry{3}{book}{}
+    \name{author}{1}{}{%
+      {{hash=CM}{%
+         family={Cs\"{o}rnyei},
+         familyi={C\bibinitperiod},
+         given={Marianna},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{CM1}
+    \strng{fullhash}{CM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{title}{On the visibility of invisible sets}
+    \field{year}{2000}
+  \endentry
 \enddatalist
 \endinput

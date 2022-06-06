@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630) (preloaded format=pdflatex 2018.6.14)  3 JUN 2022 12:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630) (preloaded format=pdflatex 2018.6.14)  6 JUN 2022 19:42
 entering extended mode
 **./main.tex
 (main.tex
@@ -1625,14 +1625,7 @@ Overfull \hbox (2.0612pt too wide) in paragraph at lines 368--369
  2
  []
 
-[13] [14]
-Overfull \hbox (56.24515pt too wide) in paragraph at lines 421--432
-\T1/cmr/m/n/12 Osserviamo che ogni in-ter-val-lo ini-zia-le $\OML/cmm/m/it/12 n
-[]; [] ; n[]$ \T1/cmr/m/n/12 in una col-le-zio-ne am-mis-si-bi-le $\OML/cmm/m/i
-t/12 n[]; [] ; n[]; [] ; n[]$
- []
-
-[15]
+[13] [14] [15]
 Underfull \hbox (badness 10000) in paragraph at lines 449--451
 
  []
@@ -1734,12 +1727,17 @@ File: disegno.png Graphic file (type png)
 Package pdftex.def Info: disegno.png  used on input line 619.
 (pdftex.def)             Requested size: 256.07741pt x 151.3086pt.
 [23 <./disegno.png>] [24]
-Underfull \hbox (badness 10000) in paragraph at lines 635--636
+Underfull \hbox (badness 10000) in paragraph at lines 635--637
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 637--638
+Underfull \hbox (badness 10000) in paragraph at lines 638--639
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 640--642
 
  []
 
@@ -1753,10 +1751,10 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 23693 strings out of 493305
- 429242 string characters out of 3128503
- 704179 words of memory out of 3000000
- 26982 multiletter control sequences out of 15000+200000
+ 23695 strings out of 493305
+ 429295 string characters out of 3128503
+ 704183 words of memory out of 3000000
+ 26984 multiletter control sequences out of 15000+200000
  562694 words of font info for 116 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  47i,10n,73p,1820b,1303s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1791,9 +1789,9 @@ a/Local/Programs/MiKTeX 2.9 a/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users
 amsfonts/cm/cmsy6.pfb><C:/Users/Chiara/AppData/Local/Programs/MiKTeX 2.9 a/font
 s/type1/public/amsfonts/cm/cmsy9.pfb><C:/Users/Chiara/AppData/Local/Programs/Mi
 KTeX 2.9 a/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (25 pages, 777303 bytes).
+Output written on main.pdf (25 pages, 703335 bytes).
 PDF statistics:
- 523 PDF objects out of 1000 (max. 8388607)
+ 528 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  26 words of extra memory for PDF output out of 10000 (max. 10000000)
 

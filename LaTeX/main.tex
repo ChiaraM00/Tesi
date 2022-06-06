@@ -74,31 +74,31 @@
 
 \section{Introduzione e prerequisiti}
 	
-	Nell’ambito della teoria della misura in $\R^n$, sono noti alcuni paradossi che mostrano come talvolta il comportamento della misura di Lebesgue possa essere controintuitivo.\\
+	Nell'ambito della teoria della misura in $\R^n$, sono noti alcuni paradossi che mostrano come talvolta il comportamento della misura di Lebesgue possa essere controintuitivo.\\
 	Un esempio famoso è il paradosso di Banach-Tarski, che utilizzando l’assioma della scelta per costruire insiemi non misurabili secondo Lebesgue, consente di decomporre la palla unitaria tridimensionale in finite parti, spostarle con movimenti rigidi e ricomporle, ottenendo due copie della palla iniziale.\\
-	Tuttavia si possono ottenere risultati apparentemente paradossali anche restringendosi a considerare insiemi misurabili, ottenuti con metodi costruttivi che non richiedono l’uso dell’assioma della scelta.\\
-	Un esempio è il seguente teorema, dimostrato da Davies nel 1952. \\
+	Tuttavia si possono ottenere risultati apparentemente paradossali anche restringendosi a considerare insiemi misurabili, ottenuti con metodi costruttivi che non richiedono l’uso dell'assioma della scelta.\\
+	Un esempio è il seguente teorema, dimostrato da Davies nel 1951 nell'articolo \Cite{1}. \\
 	Dato un insieme misurabile $A \subseteq \mathbb{R}^{2}$, esiste un insieme di rette $L$ tale che:\\
 	- per ogni punto di $A$ passa una retta di $L$ (diremo che $L$ copre $A$);\\
 	- l'insieme di punti coperto dalle rette di $L$ ha la stessa misura di Lebesgue di $A$.\\
 	
-	Se l’insieme $A$ è molto semplice, l’enunciato è intutivamente ovvio. Ad esempio se $A$ contiene un solo punto, basta prendere $L$ che contiene una sola retta, passante per quel punto. Diversamente, anche solo considerando $A$ uguale alla palla unitaria, l’enunciato di Davies non è più ovvio ma risulta paradossale. \\
-	L’idea originale utilizzata da Davies per dimostrare il teorema era data dal seguente lemma, anch’esso difficilmente intuibile.\\
+	Se l’insieme $A$ è molto semplice, l’enunciato è intuitivamente ovvio. Ad esempio se $A$ contiene un solo punto, basta prendere $L$ che contiene una sola retta, passante per quel punto. Diversamente, anche solo considerando $A$ uguale alla palla unitaria, l’enunciato di Davies non è più ovvio ma risulta paradossale. \\
+	L’idea della dimostrazione originale utilizzata da Davies era data dal seguente lemma, che può essere considerato una versione discreta del teorema.\\
 	Dato $\e >0$ e un compatto $K$ nel piano, esistono finiti parallelogrammi $P_1, P_2, …,P_n$ che coprono $K$ (cioè tali che $K \subseteq \bigcup_{i=1}^nP_i$) e per cui la misura di Lebesgue di $\bigcup_{i=1}^n P_i \setminus K$ è minore di $\e$. \\
 	
-	Costruzioni simili a quelle del teorema di Davies ammettono generalizzazioni in dimensione più alta e sono interessanti nell’analisi anche per la costruzione di controesempi.\\
-	L’obiettivo di questa tesi è dare una dimostrazione del teorema di Davies, in una forma più generale. Tale dimostrazione, che non utilizza il precedente lemma, ripercorre e approfondisce invece il procedimento seguito da M. Cs\"{o}rnyei nei suoi articoli \Cite{1}, \cite{2}.\\
+	Costruzioni simili a quelle del teorema di Davies ammettono generalizzazioni in dimensione più alta e sono interessanti nell'analisi anche per la costruzione di controesempi.\\
+	L’obiettivo di questa tesi è dare una dimostrazione del teorema di Davies, in una forma più generale. Tale dimostrazione, che non utilizza il precedente lemma, ripercorre e approfondisce invece il procedimento seguito da M. Cs\"{o}rnyei nei suoi articoli \Cite{2}, \cite{3}.\\
 	
 	Ricordiamo le seguenti definizioni.
 	\begin{defin}
-	Dato uno spazio di misura $(X, \mathcal{A})$, una misura $\mu$ si dice $\sigma$-finita se esistono degli insiemi $A_{1},A_{2},\ldots \in {\mathcal {A}}$ con $\mu \left(A_{n}\right)<\infty $ per ogni $n$, tali che $\bigcup _{n}A_{n}=X$.\\
+	Consideriamo uno spazio misurabile $(X, \mathcal{A})$, con una misura $\mu$ che d'ora in poi intendiamo non negativa. Si dice che $\mu$ è $\sigma$-finita se esistono degli insiemi $A_{1},A_{2},\ldots \in {\mathcal {A}}$ con $\mu \left(A_{n}\right)<\infty $ per ogni $n$, tali che $\bigcup _{n}A_{n}=X$.\\
 	Se $X$ spazio topologico, una misura $\mu$ su $X$ si dice boreliana se è definita sulla $\sigma$-algebra dei boreliani di $X$. \\
 	\end{defin}
 	La generalizzazione cercata afferma che il teorema di Davies è valido per una generica misura boreliana $\sigma$-finita, in particolare quindi vale per la misura di Lebesgue.\\
 	
 	Il primo passo è mostrare un rafforzamento del teorema, nel caso della misura di Lebesgue e $A$ aperto. Per fare questo, si introduce una nozione di dualità che fa corrispondere a ogni retta un punto e viceversa. Questo consente di formulare il problema in forma duale, equivalente a quella iniziale, di più facile dimostrabilità.\\
-	Per quest’ultima dimostrazione, sono ampiamente utilizzate delle costruzioni geometriche nel piano, che consentono di ottenere collezioni di parallelogrammi con caratteristiche utili ai fini della dimostrazione.\\
-	Infine, la generalizzazione del teorema richiede lo sviluppo di teoria più generale nell’ambito della teoria della misura, riguardante gli insiemi analitici o di Suslin.\\
+	Per quest'ultima dimostrazione, sono ampiamente utilizzate delle costruzioni geometriche nel piano, che consentono di ottenere collezioni di parallelogrammi con caratteristiche utili ai fini della dimostrazione.\\
+	Infine, la generalizzazione del teorema richiede lo sviluppo di una teoria più generale nell'ambito della teoria della misura, riguardante gli insiemi analitici o di Suslin.\\
 	
 	Illustriamo ora alcuni prerequisiti di teoria della misura.
 	\begin{defin}
@@ -339,7 +339,7 @@ Mostriamo ora il seguente lemma, dove con $\left(\mathbb{N}^{\infty}\right)^{\in
 
 \begin{lemma}
 	Esistono delle bigezioni
-	$$	\beta: \mathbb{N} \times \mathbb{N} \rightarrow \mathbb{N} \quad \text { and } \quad \Psi: \mathbb{N}^{\infty} \times\left(\mathbb{N}^{\infty}\right)^{\infty} \rightarrow \mathbb{N}^{\infty}
+	$$	\beta: \mathbb{N} \times \mathbb{N} \rightarrow \mathbb{N} \quad \text { e } \quad \Psi: \mathbb{N}^{\infty} \times\left(\mathbb{N}^{\infty}\right)^{\infty} \rightarrow \mathbb{N}^{\infty}
 	$$
 	tali che per ogni $m, n \in \mathbb{N}, \sigma=\left(\sigma_{i}\right) \in \mathbb{N}^{\infty}$ e $\left(\tau^{i}\right) \in\left(\mathbb{N}^{\infty}\right)^{\infty}$, dove $\tau^{i}=\left(\tau_{j}^{i}\right) \in \mathbb{N}^{\infty}$, le collezioni $\sigma_{1}, \ldots, \sigma_{m}$ e $\tau_{1}^{m}, \ldots, \tau_{n}^{m}$ sono univocamente determinate dalle prime $\beta(m, n)$ componenti di $\Psi\left(\sigma,\left(\tau^{i}\right)\right)$.
 \end{lemma}	
@@ -385,7 +385,7 @@ Ora usiamo il precedente lemma per mostrare alcune proprietà generali degli ins
 	Per concludere che $S(\mathcal{E})$ è chiuso per intersezioni e unioni numerabili, consideriamo degli insiemi $B_1, B_2...$ in $S(\mathcal{E})$.\\
 	Allora ponendo $A_{n_1,...,n_k}=B_{n_1}$ se $n_1=...=n_k$ e vuoto altrimenti, l'operazione di Suslin dà l'unione numerabile dei $B_n$.\\
 	Similmente, ponendo $A_{1,2,3,...,k}=B_{k}$ e vuoto altrimenti,  l'operazione di Suslin dà l'intersezione numerabile dei $B_n$.\\
-	-Per mostrare il secondo enunciato, sia
+	Per mostrare il secondo enunciato, sia
 	$$
 	\mathcal{F}=\{B \in S(\mathcal{E}): \quad X \backslash B \in S(\mathcal{E})\} .
 	$$
@@ -420,10 +420,10 @@ Ora usiamo il precedente lemma per mostrare alcune proprietà generali degli ins
 	\mu^{*}\left(M_{m_{1}, m_{2}, \ldots, m_{k}}\right)>\mu^{*}(A)-\varepsilon .
 	$$
 	Poiché $\mathcal{E}$ chiuso per unioni finite, $D_{m_{1}, \ldots, m_{k}} \in \mathcal{E}$; poiché $\mathcal{E}$ chiuso per intersezioni numerabili, $E:=\bigcap_{k=1}^{\infty} D_{m_{1}, \ldots, m_{k}} \in \mathcal{E}$. Siccome $M_{m_{1}, \ldots, m_{k}} \subseteq D_{m_{1}, \ldots, m_{k}}$, usando la precedente stima, $\mu^{*}\left(D_{m_{1}, m_{2}, \ldots, m_{k}}\right)>\mu^{*}(A)-\varepsilon$. Quindi $\mu(E) \geq \mu^{*}(A)-\varepsilon$, perché gli insiemi $D_{m_{1}, m_{2}, \ldots, m_{k}}$ decrescono a $E$.\\
-	Mostriamo infine che $E \subseteq A$. Sia $x \in E$, cioé per ogni $k$ si ha $x \in D_{m_{1}, \ldots, m_{k}}$. Quindi $x \in E_{n_{1}, \ldots, n_{k}}$ per una collezione $n_{1}, \ldots, n_{k}$ tale che $n_{1} \leq m_{1}, \ldots, n_{k} \leq m_{k}$.\\
+	Mostriamo infine che $E \subseteq A$. Sia $x \in E$, cioè per ogni $k$ si ha $x \in D_{m_{1}, \ldots, m_{k}}$. Quindi $x \in E_{n_{1}, \ldots, n_{k}}$ per una collezione $n_{1}, \ldots, n_{k}$ tale che $n_{1} \leq m_{1}, \ldots, n_{k} \leq m_{k}$.\\
 	Chiameremo queste collezioni ammissibili e costruiremo una successione infinita $n_{1}, n_{2}, \ldots$ con intervalli iniziali $n_{1}, \ldots, n_{k}$ ammissibili.	In tal caso, si avrà $x \in \bigcap_{k=1}^{\infty} E_{n_{1}, \ldots, n_{k}} \subseteq A$.\\
 	Per costruirla, osserviamo che, per ogni $k>1$, abbiamo collezioni ammissibili di $k$ numeri. Diciamo che una collezione $n_{1}, \ldots, n_{k}$ è estendibile se, per ogni $l \geq k$, esiste una collezione ammissibile $p_{1}, \ldots, p_{l}$ tale che $p_1=n_1,...,p_k=n_k$.\\
-	Osserviamo che ogni intervallo iniziale $n_{1}, \ldots, n_{k}$ in una collezione ammissibile $n_{1}, \ldots, n_{k}, \ldots, n_{l}$ è ammissibile per monotonia (cioé $E_{n_{1}, \ldots, n_{l}} \subseteq E_{n_{1}, \ldots, n_{k}}$).\\
+	Osserviamo che, dati  $l \geq k$, ogni intervallo iniziale $n_{1}, \ldots, n_{k}$ in una collezione ammissibile $n_{1}, \ldots, n_{l}$ è ammissibile per monotonia (cioè $E_{n_{1}, \ldots, n_{l}} \subseteq E_{n_{1}, \ldots, n_{k}}$).\\
 	Concludiamo che esiste almeno una collezione estendibile di lunghezza $1$. Infatti, supponendo il contrario, si ha che per ogni $n \leq m_{1}$ esiste una lunghezza massima $l(n)$ delle collezioni ammissibili con il numero $n$ in prima posizione. Infatti per un certo $n$ se tale massimo non esistesse, per l'osservazione precedente, la collezione $n$ sarebbe estendibile. Ora, i finiti valori di $l(n)$, sono uniformemente limitati, da cui le collezioni ammissibili hanno lunghezza limitata, che è assurdo.\\
 	Con lo stesso procedimento, la collezione estendibile $n_{1}$ è contenuta in un'altra $n_{1}, n_{2}$ estendibile. Induttivamente si ottiene una successione che per costruzione soddisfa la tesi.\\
 	Infine, come conseguenza del secondo enunciato, dato $A \in S(\mathcal{E})$, siano $E_1, E_2 ,... \in \mathcal{E} \subseteq \mathcal{M} $ crescenti e contenuti in $A$ per cui $\mu(E_n) \ra \mu^*(A)$. Sia inoltre $B \in \mathcal{M}$ contenente $A$ con $\mu(B)=\mu^*(A)$.\\
@@ -498,7 +498,7 @@ D'ora in poi ci concentriamo sul primo enunciato, la cui dimostrazione prevede a
 \end{lemma}
 
 \begin{proof} \hfill \\
-	$1)$ Se $A$ misurabile, allora esiste $G_{\delta} = \bigcap_{n=1}^{\infty} G_{n} \supseteq A$ della stessa misura, con $G_{1} \supseteq G_{2} \supseteq \cdots$ aperti. Quidi posso supporre $A=\bigcap_{n=1}^{\infty} G_{n}$.\\
+	$1)$ Se $A$ misurabile, allora esiste $G_{\delta} = \bigcap_{n=1}^{\infty} G_{n} \supseteq A$ della stessa misura, con $G_{1} \supseteq G_{2} \supseteq \cdots$ aperti. Quindi posso supporre $A=\bigcap_{n=1}^{\infty} G_{n}$.\\
 	Supponiamo che il teorema valga per gli aperti $G_{1}, G_{2}, \ldots$ e per gli insiemi di rette $L_{1}, L_{2}, \ldots$, allora è anche verificato per  $A$ e $L:=\bigcap_{n=1}^{\infty} L_{n}$.\\
 	Infatti sia $x \in A \subseteq G_i$ per ogni $i$. Allora l'insieme delle rette di $L_i$ per $x$ è residuale per ogni $i$. L'intersezione numerabile di tali insiemi è ancora un insieme residuale, in particolare è non vuoto, quindi $A \subseteq L^*$.\\
 	Inoltre, $\mu(A) = \lim_n \mu(G_n) = \lim_n \mu(L_n^*) \geq \mu\left(\bigcap_{n=1}^\infty L_n^*\right) \geq \mu\left(\left(\bigcap_{n=1}^\infty L_n\right)^*\right) = \mu(L^*) \geq \mu(A)$. \\
@@ -598,7 +598,7 @@ Inoltre la misura della proiezione dell'unione dei parallelogrammi dell'$n$-esim
 	
 	\begin{itemize}
 		\item per ogni direzione $d \in \bigcup I$ la proiezione di $U$ in direzione $d$ abbia misura minore di $\varepsilon$;
-		\item per ogni retta $l$ in direzione $d \notin \bigcup J$, se $l$ interseca $T$ allora $l$ interseca anche $U$.	
+		\item per ogni retta $\ell$ in direzione $d \notin \bigcup J$, se $\ell$ interseca $T$ allora $\ell$ interseca anche $U$.	
 	\end{itemize}
 \end{lemma}	
 
@@ -632,10 +632,14 @@ Inoltre la misura della proiezione dell'unione dei parallelogrammi dell'$n$-esim
 
 \section{Bibliografia}
 
-[1] \ \ Marianna Cs\"{o}rnyei, "How to make Davies' Theorem visible", 2001\\
+[1] \ \ R. O. Davies, "On accessibility of plane sets and differentiation
+of functions of two real variable", \emph{Proc. Cambridge Philos. Soc.} 48 (1952) 215-232.\\
 
-[2] \ \ Marianna Cs\"{o}rnyei, "On the visibility of invisible sets", 2000\\
+[2] \ \ Marianna Cs\"{o}rnyei, "How to make Davies' Theorem visible", \emph{Bull. London Math. Soc.} 33 (2001) 59-66.\\
 
-[3] \ \ V. I. Bogachev, "Measure Theory"
+[3] \ \ Marianna Cs\"{o}rnyei, "On the visibility of invisible sets",
+\emph{Ann. Acad. Sci. Fenn.}, Math. 25 (2000) 417-421.\\
+
+[4] \ \ V. I. Bogachev, "Measure Theory", \emph{Springer Science+Business Media} (2007). 
 
 \end{document}
