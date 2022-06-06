@@ -1,13 +1,10 @@
-Per enunciare il rafforzamento del teorema di Davies, diamo prima le seguenti definizioni.\\
-	\pause	
-	\begin{defin}
-	Un insieme è della \textbf{prima categoria} se unione numerabile di insiemi mai densi (cioè con chiusura a parte interna vuota).\\ \pause
-	Un insieme è \textbf{residuo} se il suo complementare è della prima categoria.
-	\end{defin}
-	\pause
-	\begin{defin}
-	Dato un insieme di rette nel piano $L$, indichiamo con $L^*$ l'insieme di punti coperti da rette di $L$.\\
-	\pause
-	Similmente, dato un insieme di punti nel piano $A$, indichiamo con $A^*$ l'insieme delle rette passanti per punti di $A$.
-	\end{defin}
 
+\frametitle{Generalizzazione del teorema}
+Dato $A$ misurabile, cerchiamo quindi un insieme boreliano $L$ che copra $A$ con le caratteristiche richieste. \\ \pause
+\medskip
+\structure{\textbf{Dimostrazione}}
+	\begin{itemize}
+		\item Passo 1: possiamo assumere che $\mu$ abbia supporto compatto $K$ disgiunto da $A$.\\ \pause
+		\item Passo 2: possiamo assumere che $A=B(x, r) \backslash\{x\}$ e $B(x, 2 r)$ sia disgiunta da $K$. Per brevità, assumiamo $A=B(0,1) \backslash\{0\}$ e $B(0,2) \cap K=\varnothing$.\\ \pause
+		\item Passo 3: per concludere, applichiamo la versione rafforzata del teorema di Davies per la misura di Lebesgue.
+	\end{itemize}

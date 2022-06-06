@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630) (preloaded format=pdflatex 2018.6.14)  14 MAY 2022 19:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630) (preloaded format=pdflatex 2018.6.14)  6 JUN 2022 22:18
 entering extended mode
 **"./Teorema di Davies.tex"
 ("Teorema di Davies.tex"
@@ -1475,27 +1475,27 @@ File: pgflibraryarrows.code.tex 2019/02/02 v3.1.1 (3.1.1)
 ))
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\\' on input line 16.
+(hyperref)                removing `\\' on input line 17.
 
-LaTeX Info: Redefining \bfseries on input line 40.
+LaTeX Info: Redefining \bfseries on input line 41.
 
-Package amsthm Warning: Unknown theoremstyle `theorem' on input line 47.
+Package amsthm Warning: Unknown theoremstyle `theorem' on input line 48.
 
 \c@teo=\count183
 
-Package amsthm Warning: Unknown theoremstyle `theorem' on input line 50.
+Package amsthm Warning: Unknown theoremstyle `theorem' on input line 51.
 
 \c@teorema=\count184
 
-Package amsthm Warning: Unknown theoremstyle `theorem' on input line 53.
+Package amsthm Warning: Unknown theoremstyle `theorem' on input line 54.
 
 \c@proposizione=\count185
 
-Package amsthm Warning: Unknown theoremstyle `theorem' on input line 56.
+Package amsthm Warning: Unknown theoremstyle `theorem' on input line 57.
 
 \c@corollario=\count186
 
-Package amsthm Warning: Unknown theoremstyle `theorem' on input line 61.
+Package amsthm Warning: Unknown theoremstyle `theorem' on input line 62.
 
 \c@lem=\count187
 
@@ -1586,4 +1586,360 @@ G,.JBIG2,.JB2,.eps]
 \AtBeginShipoutBox=\box60
 Package hyperref Info: Link coloring OFF on input line 69.
 
-("C
+("C:\Users\Chiara\AppData\Local\Programs\MiKTeX 2.9 a\tex\latex\hyperref\namere
+f.sty"
+Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
+
+("C:\Users\Chiara\AppData\Local\Programs\MiKTeX 2.9 a\tex\generic\oberdiek\gett
+itlestring.sty"
+Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
+)
+\c@section@level=\count194
+)
+LaTeX Info: Redefining \ref on input line 69.
+LaTeX Info: Redefining \pageref on input line 69.
+LaTeX Info: Redefining \nameref on input line 69.
+ ("Teorema di Davies.out") ("Teorema di Davies.out")
+\@outlinefile=\write5
+\openout5 = `"Teorema di Davies.out"'.
+
+
+("C:\Users\Chiara\AppData\Local\Programs\MiKTeX 2.9 a\tex\latex\translator\tran
+slator-basic-dictionary-English.dict"
+Dictionary: translator-basic-dictionary, Language: English 
+)
+("C:\Users\Chiara\AppData\Local\Programs\MiKTeX 2.9 a\tex\latex\translator\tran
+slator-bibliography-dictionary-English.dict"
+Dictionary: translator-bibliography-dictionary, Language: English 
+)
+("C:\Users\Chiara\AppData\Local\Programs\MiKTeX 2.9 a\tex\latex\translator\tran
+slator-environment-dictionary-English.dict"
+Dictionary: translator-environment-dictionary, Language: English 
+)
+("C:\Users\Chiara\AppData\Local\Programs\MiKTeX 2.9 a\tex\latex\translator\tran
+slator-months-dictionary-English.dict"
+Dictionary: translator-months-dictionary, Language: English 
+)
+("C:\Users\Chiara\AppData\Local\Programs\MiKTeX 2.9 a\tex\latex\translator\tran
+slator-numbers-dictionary-English.dict"
+Dictionary: translator-numbers-dictionary, Language: English 
+)
+("C:\Users\Chiara\AppData\Local\Programs\MiKTeX 2.9 a\tex\latex\translator\tran
+slator-theorem-dictionary-English.dict"
+Dictionary: translator-theorem-dictionary, Language: English 
+)
+LaTeX Info: Redefining \it@ocap on input line 69.
+LaTeX Info: Redefining \it@ccap on input line 69.
+
+
+File italian.ldf warning: 
+italian.ldf    With OT1 encoding guillemets are poorly faked
+italian.ldf    Use T1 encoding
+italian.ldf    or specify a font with command \CaporaliFrom
+italian.ldf    See the documentation concerning the babel-italian typesetting 
+italian.ldf    on input line 69.
+
+Package pgfplots notification 'compat/show suggested version=true': you might b
+enefit from \pgfplotsset{compat=1.18} (current compat level: 1.15).
+
+("Teorema di Davies.nav") [1
+
+{C:/Users/Chiara/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+\openout4 = `"Teorema di Davies.vrb"'.
+
+ ("Teorema di Davies.vrb"
+LaTeX Font Info:    Try loading font information for U+msa on input line 2.
+
+("C:\Users\Chiara\AppData\Local\Programs\MiKTeX 2.9 a\tex\latex\amsfonts\umsa.f
+d"
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 2.
+
+("C:\Users\Chiara\AppData\Local\Programs\MiKTeX 2.9 a\tex\latex\amsfonts\umsb.f
+d"
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 2.
+
+("C:\Users\Chiara\AppData\Local\Programs\MiKTeX 2.9 a\tex\latex\jknappen\ursfs.
+fd"
+File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
+)) [2
+
+] ("Teorema di Davies.vrb") [3
+
+] ("Teorema di Davies.vrb") [4
+
+]
+("Teorema di Davies.vrb") [5
+
+] ("Teorema di Davies.vrb") [6
+
+] [7
+
+] [8
+
+] [9
+
+]
+[10
+
+] [11
+
+] [12
+
+] [13
+
+] [14
+
+]
+\openout4 = `"Teorema di Davies.vrb"'.
+
+ ("Teorema di Davies.vrb"
+
+LaTeX Font Warning: Font shape `OT1/cmss/bx/it' undefined
+(Font)              using `OT1/cmss/bx/n' instead on input line 4.
+
+) [15
+
+] ("Teorema di Davies.vrb") [16
+
+] ("Teorema di Davies.vrb") [17
+
+]
+("Teorema di Davies.vrb") [18
+
+] ("Teorema di Davies.vrb") [19
+
+]
+\openout4 = `"Teorema di Davies.vrb"'.
+
+
+("Teorema di Davies.vrb") [20
+
+] ("Teorema di Davies.vrb") [21
+
+]
+("Teorema di Davies.vrb") [22
+
+] ("Teorema di Davies.vrb") [23
+
+]
+("Teorema di Davies.vrb") [24
+
+] [25
+
+] [26
+
+] [27
+
+] [28
+
+]
+\openout4 = `"Teorema di Davies.vrb"'.
+
+ ("Teorema di Davies.vrb"
+<prova1.png, id=1114, 2083.785pt x 737.75626pt>
+File: prova1.png Graphic file (type png)
+<use prova1.png>
+Package pdftex.def Info: prova1.png  used on input line 5.
+(pdftex.def)             Requested size: 308.06367pt x 109.06013pt.
+)
+Overfull \vbox (1.65627pt too high) detected at line 218
+ []
+
+[29
+
+ <./prova1.png (PNG copy)>] ("Teorema di Davies.vrb"
+File: prova1.png Graphic file (type png)
+<use prova1.png>
+Package pdftex.def Info: prova1.png  used on input line 5.
+(pdftex.def)             Requested size: 308.06367pt x 109.06013pt.
+)
+Overfull \vbox (1.65627pt too high) detected at line 218
+ []
+
+[30
+
+] ("Teorema di Davies.vrb"
+File: prova1.png Graphic file (type png)
+<use prova1.png>
+Package pdftex.def Info: prova1.png  used on input line 5.
+(pdftex.def)             Requested size: 308.06367pt x 109.06013pt.
+)
+Overfull \vbox (1.65627pt too high) detected at line 218
+ []
+
+[31
+
+] ("Teorema di Davies.vrb"
+File: prova1.png Graphic file (type png)
+<use prova1.png>
+Package pdftex.def Info: prova1.png  used on input line 5.
+(pdftex.def)             Requested size: 308.06367pt x 109.06013pt.
+)
+Overfull \vbox (1.65627pt too high) detected at line 218
+ []
+
+[32
+
+] ("Teorema di Davies.vrb"
+File: prova1.png Graphic file (type png)
+<use prova1.png>
+Package pdftex.def Info: prova1.png  used on input line 5.
+(pdftex.def)             Requested size: 308.06367pt x 109.06013pt.
+)
+Overfull \vbox (1.65627pt too high) detected at line 218
+ []
+
+[33
+
+]
+\openout4 = `"Teorema di Davies.vrb"'.
+
+ ("Teorema di Davies.vrb"
+<prova2.png, id=1246, 2083.785pt x 737.75626pt>
+File: prova2.png Graphic file (type png)
+<use prova2.png>
+Package pdftex.def Info: prova2.png  used on input line 4.
+(pdftex.def)             Requested size: 308.06367pt x 109.06013pt.
+) [34
+
+ <./prova2.png (PNG copy)>] [35
+
+] [36
+
+]
+[37
+
+] [38
+
+] [39
+
+] [40
+
+] [41
+
+] [42
+
+] [43
+
+] [44
+
+]
+\openout4 = `"Teorema di Davies.vrb"'.
+
+ ("Teorema di Davies.vrb") [45
+
+]
+("Teorema di Davies.vrb") [46
+
+] ("Teorema di Davies.vrb") [47
+
+]
+("Teorema di Davies.vrb") [48
+
+] [49
+
+] [50
+
+] [51
+
+] [52
+
+] [53
+
+]
+\openout4 = `"Teorema di Davies.vrb"'.
+
+ ("Teorema di Davies.vrb") [54
+
+] ("Teorema di Davies.vrb") [55
+
+] ("Teorema di Davies.vrb") [56
+
+]
+("Teorema di Davies.vrb") [57
+
+] [58
+
+] [59
+
+] [60
+
+] [61
+
+] [62
+
+] [63
+
+] [64
+
+] [65
+
+] [66
+
+]
+[67
+
+] [68
+
+]
+\tf@nav=\write6
+\openout6 = `"Teorema di Davies.nav"'.
+
+\tf@toc=\write7
+\openout7 = `"Teorema di Davies.toc"'.
+
+\tf@snm=\write8
+\openout8 = `"Teorema di Davies.snm"'.
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 399.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 399.
+ ("Teorema di Davies.aux")
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 399.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 399.
+Package rerunfilecheck Info: File `"Teorema di Davies".out' has not changed.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 34793 strings out of 493305
+ 851466 string characters out of 3128503
+ 1048587 words of memory out of 3000000
+ 37440 multiletter control sequences out of 15000+200000
+ 14346 words of font info for 57 fonts, out of 3000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 69i,15n,119p,815b,963s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Users/Chiara/AppData/Local/Programs/MiKTeX 2.9 a/fonts/type1/public/amsfo
+nts/cm/cmex10.pfb><C:/Users/Chiara/AppData/Local/Programs/MiKTeX 2.9 a/fonts/ty
+pe1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Chiara/AppData/Local/Programs/MiKTe
+X 2.9 a/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/Chiara/AppData/Loca
+l/Programs/MiKTeX 2.9 a/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/Chia
+ra/AppData/Local/Programs/MiKTeX 2.9 a/fonts/type1/public/amsfonts/cm/cmmi8.pfb
+><C:/Users/Chiara/AppData/Local/Programs/MiKTeX 2.9 a/fonts/type1/public/amsfon
+ts/cm/cmr10.pfb><C:/Users/Chiara/AppData/Local/Programs/MiKTeX 2.9 a/fonts/type
+1/public/amsfonts/cm/cmr6.pfb><C:/Users/Chiara/AppData/Local/Programs/MiKTeX 2.
+9 a/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Chiara/AppData/Local/Prog
+rams/MiKTeX 2.9 a/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Users/Chiara/Ap
+pData/Local/Programs/MiKTeX 2.9 a/fonts/type1/public/amsfonts/cm/cmss12.pfb><C:
+/Users/Chiara/AppData/Local/Programs/MiKTeX 2.9 a/fonts/type1/public/amsfonts/c
+m/cmss8.pfb><C:/Users/Chiara/AppData/Local/Programs/MiKTeX 2.9 a/fonts/type1/pu
+blic/amsfonts/cm/cmssbx10.pfb><C:/Users/Chiara/AppData/Local/Programs/MiKTeX 2.
+9 a/fonts/type1/public/amsfonts/cm/cmssi10.pfb><C:/Users/Chiara/AppData/Local/P
+rograms/MiKTeX 2.9 a/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Chiara
+/AppData/Local/Programs/MiKTeX 2.9 a/fonts/type1/public/amsfonts/cm/cmsy6.pfb><
+C:/Users/Chiara/AppData/Local/Programs/MiKTeX 2.9 a/fonts/type1/public/amsfonts
+/cm/cmsy8.pfb><C:/Users/Chiara/AppData/Local/Programs/MiKTeX 2.9 a/fonts/type1/
+public/amsfonts/symbols/msam10.pfb><C:/Users/Chiara/AppData/Local/Programs/MiKT
+eX 2.9 a/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on "Teorema di Davies.pdf" (68 pages, 1529918 bytes).
+PDF statistics:
+ 2482 PDF objects out of 2487 (max. 8388607)
+ 137 named destinations out of 1000 (max. 500000)
+ 1799 words of extra memory for PDF output out of 10000 (max. 10000000)
+

@@ -1,5 +1,4 @@
-\documentclass[a4paper, twoside,openright]{article}
-\usepackage[T1]{fontenc} % Font encoding, T1 = it
+\documentclass[a4paper, twoside]{article}
 \usepackage[utf8]{inputenc} % Input encoding - per caratteri particolari
 \usepackage[english,italian]{babel} % Lingua principale italiano, con parti in inglese
 \usepackage{graphicx} % Per includere immagini esterne
@@ -11,11 +10,12 @@
 \usepackage{enumitem} 
 \usepackage{filecontents}
 \usepackage{chngcntr}
-\usepackage{ mathrsfs }
+\usepackage{mathrsfs}
 \usepackage{xcolor}
 \usepackage{caption}
 \captionsetup[figure]{labelformat=empty}
 \usepackage[backend=bibtex]{biblatex}
+\usepackage{setspace}
 
 \addbibresource{sample.bib}
 
@@ -62,6 +62,7 @@
 \makeatother
 
 \counterwithin{teo}{section}
+\onehalfspacing
 
 \begin{document}
 
@@ -92,7 +93,7 @@
 	Ricordiamo le seguenti definizioni.
 	\begin{defin}
 	Consideriamo uno spazio misurabile $(X, \mathcal{A})$, con una misura $\mu$ che d'ora in poi intendiamo non negativa. Si dice che $\mu$ è $\sigma$-finita se esistono degli insiemi $A_{1},A_{2},\ldots \in {\mathcal {A}}$ con $\mu \left(A_{n}\right)<\infty $ per ogni $n$, tali che $\bigcup _{n}A_{n}=X$.\\
-	Se $X$ spazio topologico, una misura $\mu$ su $X$ si dice boreliana se è definita sulla $\sigma$-algebra dei boreliani di $X$. \\
+	Se $X$ spazio topologico, una misura $\mu$ su $X$ si dice boreliana se è definita sulla $\sigma$-algebra dei boreliani di $X$. 
 	\end{defin}
 	La generalizzazione cercata afferma che il teorema di Davies è valido per una generica misura boreliana $\sigma$-finita, in particolare quindi vale per la misura di Lebesgue.\\
 	
@@ -389,7 +390,7 @@ Ora usiamo il precedente lemma per mostrare alcune proprietà generali degli ins
 	$$
 	\mathcal{F}=\{B \in S(\mathcal{E}): \quad X \backslash B \in S(\mathcal{E})\} .
 	$$
-	Mostriamo che $\mathcal{F}$ è una $\sigma$-algebra. Per costruzione, $\mathcal{F}$ è chiusa per complementare. Siano $B_{n} \in \mathcal{F}$, allora $\bigcap_{n=1}^{\infty} B_{n} \in S(\mathcal{E})$ per il primo enunciato. Similmente, $X \backslash \bigcap_{n=1}^{\infty} B_{n}=\bigcup_{n=1}^{\infty}\left(X \backslash B_{n}\right) \in S(\mathcal{E})$, da cui $\mathcal{F}$ chiusa per intersezione. Inoltre per l'ipotesi, $\varnothing \in \mathcal{F}$. Quindi $\mathcal{F}$ è una $\sigma$-algebra. Per ipotesi $\mathcal{E} \subseteq \mathcal{F}$, da cui $\sigma(\mathcal{E}) \subseteq \mathcal{F} \subseteq S(\mathcal{E})$.\\
+	Mostriamo che $\mathcal{F}$ è una $\sigma$-algebra. Per costruzione, $\mathcal{F}$ è chiusa per complementare. Siano $B_{n} \in \mathcal{F}$, allora $\bigcap_{n=1}^{\infty} B_{n} \in S(\mathcal{E})$ per il primo enunciato. Similmente, $X \backslash \bigcap_{n=1}^{\infty} B_{n}=\bigcup_{n=1}^{\infty}\left(X \backslash B_{n}\right) \in S(\mathcal{E})$, da cui $\mathcal{F}$ chiusa per intersezione. Inoltre per l'ipotesi, $\varnothing \in \mathcal{F}$. Quindi $\mathcal{F}$ è una $\sigma$-algebra. Per ipotesi $\mathcal{E} \subseteq \mathcal{F}$, da cui $\sigma(\mathcal{E}) \subseteq \mathcal{F} \subseteq S(\mathcal{E})$.
 \end{proof}
 
 
@@ -518,7 +519,7 @@ D'ora in poi ci concentriamo sul primo enunciato, la cui dimostrazione prevede a
 	e $B\left(x_{n}, 2 r_{n}\right) \cap K=\varnothing$ per ogni $n$.\\
 	Basta mostrare che per ogni $n$ esiste un insieme di rette $L_{n}$ tale che la tesi valga per $B\left(x_{n}, r_{n}\right) \backslash\left\{x_{n}\right\}$. Infatti definendo $L=\bigcup_n L_n$, mostriamo che la tesi vale per $A$.\\
 	La condizione di residualità passa a unioni arbitrarie.\\
-	Inoltre per ogni $n$, $\mu(B(x_n,r_n))=\mu(L_n^*)=0$ per ipotesi, quindi $\mu(L)=\mu((\bigcup_nL_n)^*) = \mu(\bigcup_n L_n^*)=0$.\\
+	Inoltre per ogni $n$, vale $\mu(B(x_n,r_n))=\mu(L_n^*)=0$ per ipotesi, quindi $\mu(L)=\mu((\bigcup_nL_n)^*) = \mu(\bigcup_n L_n^*)=0$.
 	
 	\end{proof}
 
@@ -526,7 +527,7 @@ Concludiamo con la dimostrazione del teorema di Davies generalizzato.
 
 \begin{proof}[Dimostrazione del teorema \ref{teo1}]
 	
-Per brevità, assumiamo che $A=B(0,1) \backslash\{0\}$ e $B(0,2) \cap K=\varnothing$. Applichiamo il lemma \ref{lemma1} ad $A$ e $x=0$ e sia $M$ l'insieme di rette così ottenuto.\\
+Per brevità, assumiamo che $A=B(0,1) \backslash\{0\}$ e che $B(0,2) \cap K=\varnothing$. Applichiamo il lemma \ref{lemma1} ad $A$ e $x=0$ e sia $M$ l'insieme di rette così ottenuto.\\
 \hfill \\
 Sia $M^{* *}=M^{*} \backslash B(0,1)$. Consideriamo lo spazio
 $$
@@ -567,7 +568,7 @@ Consideriamo il parallelogramma non degenere $P=A_{1} A_{2} A_{3} A_{4}$, con pu
 	\end{figure}
 
 
-Ora ripetiamo il procedimento per ciascuno dei nuovi parallelogrammi. Iterando per un numero finito di passi, si ottengono un numero finito di sotto-parallelogrammi di $P$. Nella figura 2 sono mostrati i primi tre passi e sono evidenziati gli otto parallelogrammi ottenuti.\\
+Ora ripetiamo il procedimento per ciascuno dei nuovi parallelogrammi. Iterando per un numero finito di passi, si ottiene un numero finito di sotto-parallelogrammi di $P$. Nella figura 2 sono mostrati i primi tre passi e sono evidenziati gli otto parallelogrammi ottenuti.\\
 
 \begin{figure} [h!]
 	\includegraphics[width=9cm, height=5cm]{passi123grigio.png}
@@ -625,7 +626,7 @@ Inoltre la misura della proiezione dell'unione dei parallelogrammi dell'$n$-esim
 	Il numero di passi necessario è indipendente dal $P_i$ scelto ed è dato dalla seguente osservazione: poiché $\operatorname{cl}(J) \subsetneq(a, b)$, esiste $\rho >0$ tale che $I \subseteq (a+\rho,b)$. Quindi esiste un certo $n$ per cui $I \subseteq \bigcup_{i=2}^{n+1}D_i$.\\
 	Con questa procedura, per ogni $P_i$, si ottiene una collezione di sotto-parallelogrammi, diciamo $U_i$. Sia allora $U = \bigcup_i U_i$.\\
 	La misura della proiezione (non ortogonale) di $U$ sulla retta di direzione $a$ è minore di $2 \cdot \frac{1}{2} \varepsilon=\varepsilon$ in ogni direzione in $I$. Quindi, la misura della proiezione ortogonale in ogni direzione in $I$ è minore di $\varepsilon$.\\
-	Infine, considerando il parallelogramma $P_i$ e la sua collezione $U_i$, siccome $D_1 =(a,b)^c$ e $(a,b) \subseteq J$, allora $J^c \subseteq D_1$. Quindi ogni retta in direzione in $J^c$ che interseca $P_i$, interseca anche $U_i$. Quindi ogni retta in direzione in $J^c$ che interseca $T$, interseca anche $U$. \\
+	Infine, considerando il parallelogramma $P_i$ e la sua collezione $U_i$, siccome $D_1 =(a,b)^c$ e $(a,b) \subseteq J$, allora $J^c \subseteq D_1$. Quindi ogni retta in direzione in $J^c$ che interseca $P_i$, interseca anche $U_i$. Quindi ogni retta in direzione in $J^c$ che interseca $T$, interseca anche $U$. 
 \end{proof}
 
 \newpage
@@ -633,12 +634,12 @@ Inoltre la misura della proiezione dell'unione dei parallelogrammi dell'$n$-esim
 \section{Bibliografia}
 
 [1] \ \ R. O. Davies, "On accessibility of plane sets and differentiation
-of functions of two real variable", \emph{Proc. Cambridge Philos. Soc.} 48 (1952) 215-232.\\
+of functions of two real variable", \emph{Proc. Cambridge Philos. Soc.} 48 (1952) 215-232.
 
-[2] \ \ Marianna Cs\"{o}rnyei, "How to make Davies' Theorem visible", \emph{Bull. London Math. Soc.} 33 (2001) 59-66.\\
+[2] \ \ Marianna Cs\"{o}rnyei, "How to make Davies' Theorem visible", \emph{Bull. London Math. Soc.} 33 (2001) 59-66.
 
 [3] \ \ Marianna Cs\"{o}rnyei, "On the visibility of invisible sets",
-\emph{Ann. Acad. Sci. Fenn.}, Math. 25 (2000) 417-421.\\
+\emph{Ann. Acad. Sci. Fenn.}, Math. 25 (2000) 417-421.
 
 [4] \ \ V. I. Bogachev, "Measure Theory", \emph{Springer Science+Business Media} (2007). 
 
