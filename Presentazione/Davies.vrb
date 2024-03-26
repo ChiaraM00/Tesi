@@ -1,0 +1,11 @@
+
+\frametitle{Generalizzazione del teorema}
+Dato $A$ misurabile, cerchiamo quindi un insieme boreliano $L$ che copra $A$ con le caratteristiche richieste. \\ \pause
+\medskip
+\structure{\textbf{Dimostrazione}}
+	\begin{itemize}
+		\item Passo 1: possiamo assumere che $\mu$ abbia supporto compatto $K$ disgiunto da $A$.\\ \pause
+		\item Passo 2: possiamo assumere che $A=B(x, r) \backslash\{x\}$ e $B(x, 2 r)$ sia disgiunta da $K$. Per brevità, assumiamo $A=B(0,1) \backslash\{0\}$ e $B(0,2) \cap K=\varnothing$. \pause
+		\item Passo 3: possiamo assumere che $\mu$ sia finita. \pause
+		\item Passo 4: per concludere, applichiamo il lemma 1 (teorema di Davies per la misura di Lebesgue).
+	\end{itemize}
